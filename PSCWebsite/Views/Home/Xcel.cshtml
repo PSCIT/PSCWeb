@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "XCEL Contact Center";
+}
+
+<style>
+    @@media only screen and (min-width : 320px) {
+        .slickclass {
+            display: none;
+        }
+
+        header {
+            background: none;
+            height: auto;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        .footerskew {
+            display: none;
+        }
+
+        footer {
+            margin: 0;
+        }
+
+            footer img {
+                padding-top: 30px;
+            }
+    }
+</style>
+
+<div style="position:absolute;right:120px;top:10px;z-index:999999999;">
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> | <a class="mont" style="color:#444" href="">English</a> | <a style="font-family: 'Droid Arabic Kufi', sans-serif;color:#444" href=@Url.Action("XcelAr","Home")>العربي</a>
+</div>
+
+<div class="container">
+    <br />
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+
+            <a class="btn btn-lg btn-success" href=@Url.Action("Services", "Home")>Health Insurance Project</a>
+            <a class="btn btn-lg btn-success" href=@Url.Action("ExpatsExamProj", "Home")>Expats Examinition Project</a>
+            <a class="btn btn-lg btn-success" href=@Url.Action("Xcel", "Home")>Xcel Contact Center</a>
+            <a class="btn btn-lg btn-success" href=@Url.Action("Yemnak","Home")>Yemnak Concierge</a>
+
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h3 class="mont text-center" style="color:black">XCEL Contact Center</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
+            <video id="Aboutus_Video_PSC" class="Aboutus_Video_PSC" controls="controls">
+                <source src="~/Content/Videos/xcel.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <p class="mont yemnak_description">
+                The Public Services Company includes the Excel Call Center, which was established in 2008, which operates several contact centers for several parties in the public sector, with a staff of up to 100 employees, with the implementation of the international performance standards KBI, which operates the latest systems and specialized equipment in the field of communication (AVAYA SYSTEM, CALL PILOT and Call Forwarding from CISCO, and the services offered by the Call Center:
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-2">
+            <ul class="list-group mont">
+                <li class="list-group-item">Incoming and outgoing calls</li>
+                <li class="list-group-item">Marketing campaigns</li>
+                <li class="list-group-item">Polling campaigns</li>
+                <li class="list-group-item">Guidance campaigns and identification</li>
+                <li class="list-group-item">Text messaging service</li>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <ul class="list-group mont">
+                <li class="list-group-item">Email service</li>
+                <li class="list-group-item">Data entry service</li>
+                <li class="list-group-item">Technical support service</li>
+                <li class="list-group-item">Counseling and training Services</li>
+                <li class="list-group-item">Collection and follow up telephone</li>
+                <li class="list-group-item">Advertising services</li>
+            </ul>
+        </div>
+    </div>
+</div>

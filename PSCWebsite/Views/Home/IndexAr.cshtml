@@ -1,0 +1,199 @@
+﻿
+@{
+    ViewBag.Title = "IndexAr";
+    Layout = "~/Views/Shared/_LayoutAr.cshtml";
+}
+
+<div style="position:absolute;left:130px;top:10px;z-index:999999999;">
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> | <a style="color:#555; font-family: 'Montserrat', sans-serif;" href=@Url.Action("Index","Home")>English</a> | <a class="mont" style="color:#555" href="#">العربي</a>
+</div>
+
+<video autoplay loop muted poster="~/Content/Images/DSC_1542.jpg" id="background">
+    <source src="~/Content/Videos/Kuwait.mp4" type="video/mp4" />
+</video>
+
+
+
+<section class="about">
+    <div class="container">
+        <div class="row">
+            @*<div class="clearfix">
+                    <div class="col-lg-6 col-lg-push-6">
+                        <img class="img-responsive" src="~/Content/Images/services.svg" alt="" />
+                    </div>
+
+                    <div class="col-lg-6 col-lg-pull-6">
+                        <h1 class="mont">
+                            Range of Services Adapted to Your Needs
+                        </h1>
+                        <h3 class="mont">
+                            The Public Services Company was founded in 1996 as a Kuwait Closed Shareholding Company owned mostly by government institutions with a paid-up capital of KD 3,000,000.
+                            In June 2003, PSC’s organization structure was changed as the Kuwait Finance House (with 80% share) and Al-Awqaf Foundation (with 20% share) joined together to run its business operations.
+                        </h3>
+                        <a href="#" class="btn btn-lg btn-block btn-flat mont">Read More</a>
+                    </div>
+                </div>*@
+
+            <div class="col-lg-10 col-lg-offset-1">
+                <h1 class="mont">
+                    مجموعة من الخدمات المقدمة وفقا لإحتياجاتك
+                </h1>
+                <h3 class="mont">
+                    تأسست شركة الخدمات العامة عام 1996م كشركة مساهمة كويتية (مقفلة) تمتلك معظم أسهمها هيئات حكومية برأس مال مدفوع قدره ثلاثة ملايين دينار كويتي. وفي شهر يونيو عام 2003م طرأ تغيير على الهيكل التنظيمي للشركة وذلك حين اتحد بيت التمويل الكويتي (والذي كان يمتلك 80 بالمائة من أسهم الشركة آنذاك) مع الأمانة العامة للأوقاف الكويتية (والتي كانت تمتلك 20 بالمائة من أسهم الشركة آنذاك) بهدف إدارة الشركة تحت مظلة واحدة
+                    <a href=@Url.Action("AboutUsAr","Home") class="btn btn-xs btn-flat mont">إقرأ المزيد</a>
+                </h3>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="mont text-center heading">خدماتنا</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <div class="row card">
+                    <div class="col-xs-12 col-lg-9 mont">
+                        <h2>مشروع فحص العمالة الوافدة</h2>
+                        <p>
+                            فخراً لشركة الخدمات العامه إسهامها الحقيقي في إحكام منظومة الأمن الصحي الوقائي للبلاد بالتعاون مع وزارة الصحه من خلال مشروع فحص العماله الوافده قبل دخول الكويت في مراكزنا المنتشرة حول العالم
+                            <a href=@Url.Action("ExpatsExamProjAr", "Home")>إقرأ المزيد ...</a>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-lg-3">
+                        <img class="img-responsive" src="~/Content/Images/ExpatexamProj.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="row card">
+                    <div class="col-xs-12 col-lg-9 mont">
+                        <h2>مشروع الضمان الصحى</h2>
+                        <p>
+                            أحد أكبر المشروعات الوطنيه التي تنفذها شركة الخدمات العامه بنظام ال BOT  ، حيث تقدم الشركة خدمة تسجيل المشتركين في نظام الضمان والتأمين الصحي لجميع الوافدين إلى البلاد وإصدار البطاقات الخاصه بهم
+                            <a href=@Url.Action("ServicesAr", "Home")>إقرأ المزيد ...</a>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-lg-3">
+                        <img class="img-responsive" src="~/Content/Images/HealthProject.png" alt="" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 col-lg-6">
+                <div class="row card">
+                    <div class="col-xs-12 col-lg-9 mont">
+                        <h2>يُمناك كونسيرج</h2>
+                        <p>
+                            هو مشروع الأحلام ، حيث يُحلق بك عبر خدماتنا إلى عالم الرفاهية والمتعه ، معنا تصبح الأمنيات حقيقة .. وتغدو الحياة أجمل وأسهل،
+                            <a href=@Url.Action("YemnakAr","Home")>إقرأ المزيد ...</a>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-lg-3">
+                        <img class="img-responsive" src="~/Content/Images/YemnakProj.png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6">
+                <div class="row card">
+                    <div class="col-xs-12 col-lg-9 mont">
+                        <h2>مركز إتصال إكسل</h2>
+                        <p>
+                            تضم شركة الخدمات العامه بين وحداتها مركز إتصال "إكسل XCEL  بطاقة إستيعابية تصل حتى 100 موظف بأحدث الأنظمة والأجهزة المتخصصه في مجال الإتصال (AVAYA System ) ونظام إدارة علاقات العملاء (Microsoft CRM)  ونظم تســـجيل المكالمات Call Parrot))
+                            <a href=@Url.Action("XcelAr", "Home")>إقرأ المزيد ...</a>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-lg-3">
+                        <img class="img-responsive" src="~/Content/Images/Xcel.png" alt="" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="newsskew"></div>
+
+<section class="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="mont text-center heading">أخـبــار وأحــداث</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="slickclass2">
+                <div class="col-lg-4 text-center">
+                    <figure class="snip1527">
+                        <div class="image"><img src="~/Content/Images/KWG2.jpg" alt="pr-sample24" /></div>
+                        <figcaption>
+                            <div class="date"><span class="day">16</span><span class="month">Apr</span></div>
+                            <h3>Employees Honoring 2015</h3>
+                            <p>
+                                Public Services Company honored its employees for 2015 At its headquarters in Kuwait.
+                            </p>
+                        </figcaption>
+                        <a href=@Url.Action("Media3Ar","Home")></a>
+                    </figure>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <figure class="snip1527">
+                        <div class="image">
+                            <img src="~/Content/Images/KWG3.jpg" alt="pr-sample25" />
+                        </div>
+                        <figcaption>
+                            <div class="date"><span class="day">21</span><span class="month">May</span></div>
+                            <h3>ceremony of the Kuwaiti Cultural Office in Cairo</h3>
+                            <p>
+                                Public Services Company, sponsored the ceremony held by the Kuwaiti Cultural Office in Cairo for the 2017/2016 Kuwaiti students.
+                            </p>
+                        </figcaption>
+                        <a href=@Url.Action("Media2Ar","Home")></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <figure class="snip1527">
+                        <div class="image"><img src="~/Content/Images/KWG1.jpg" alt="pr-sample23" /></div>
+                        <figcaption>
+                            <div class="date"><span class="day">20</span><span class="month">June</span></div>
+                            <h3>Positive expectations surround the operations</h3>
+                            <p>
+                                Salam Holding Group held its Ramadan gathering in the presence of the officials of the subsidiaries and their employees at the Mayadeen Al-Ramayeh Complex
+                            </p>
+                        </figcaption>
+                        <a href=@Url.Action("MediaAr", "Home")></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <figure class="snip1527">
+                        <div class="image"><img src="~/Content/Images/KWG4.jpg" alt="pr-sample23" /></div>
+                        <figcaption>
+                            <div class="date"><span class="day">13</span><span class="month">Apr</span></div>
+                            <h3>Call for regular and group lunch</h3>
+                            <p>
+                                The Public Services Company has invited to the regular meeting and collective lunch at the compound of fields of shooting
+                            </p>
+                        </figcaption>
+                        <a href=@Url.Action("Media4Ar","Home")></a>
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+

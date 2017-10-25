@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "ContactusAr";
+    Layout = "~/Views/Shared/_LayoutAr.cshtml";
+}
+
+<style>
+    @@media only screen and (min-width : 320px) {
+        .slickclass {
+            display: none;
+        }
+
+        header {
+            background: none;
+            height: auto;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        .footerskew {
+            display: none;
+        }
+
+        footer {
+            margin: 0;
+        }
+
+            footer img {
+                padding-top: 30px;
+            }
+    }
+</style>
+
+
+<div style="position:absolute;left:130px;top:10px;z-index:999999999;">
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> | <a style="color:#555; font-family: 'Montserrat', sans-serif;" href=@Url.Action("Contactus","Home")>English</a> | <a class="mont" style="color:#555" href="#">العربي</a>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="map">
+                <div id="map"></div>
+                <div class="map-c">
+                    <h1>شركة الخدمات العامة</h1>
+                    <p>جنوب السره - منطقة الوزارات بجوار بنك الكويت الوطنى ٢٧٣٧٧ الصفاة / ١٣١٠٤ </p>
+                    <div class="det"><i class="fa fa-map-marker"></i> 29.2730019, 48.0164527</div>
+                    <div class="det"><i class="fa fa-phone"></i> 1824824</div>
+                    <div class="det"><i class="fa fa-envelope"></i> web@psc.com.kw</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

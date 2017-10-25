@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "ExpatsExamProjAr";
+    Layout = "~/Views/Shared/_LayoutAr.cshtml";
+}
+
+<style>
+    @@media only screen and (min-width : 320px) {
+        .slickclass {
+            display: none;
+        }
+
+        header {
+            background: none;
+            height: auto;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        .footerskew {
+            display: none;
+        }
+
+        footer {
+            margin: 0;
+        }
+
+            footer img {
+                padding-top: 30px;
+            }
+    }
+</style>
+
+<div style="position:absolute;left:130px;top:10px;z-index:999999999;">
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> | <a style="color:#555; font-family: 'Montserrat', sans-serif;" href=@Url.Action("ExpatsExamProj", "Home")>English</a> | <a class="mont" style="color:#555" href="#">العربي</a>
+</div>
+
+<div class="container">
+    <br />
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+
+            <a class="btn btn-lg btn-success mont" href=@Url.Action("ServicesAr", "Home")>مشروع الضمان الصحى</a>
+            <a class="btn btn-lg btn-success mont" href="#">مشروع فحص العمالة الوافدة</a>
+            <a class="btn btn-lg btn-success mont" href=@Url.Action("XcelAr", "Home")>مركز إتصال إكسل</a>
+            <a class="btn btn-lg btn-success mont" href=@Url.Action("YemnakAr","Home")>يُمناك كونسيرج</a>
+
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h3 class="mont text-center" style="color:black">مشروع فحص العمالة الوافدة</h3>
+            <h3 class="mont text-center" style="color:black">الاردن- مصر- الهند</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
+            <video id="Aboutus_Video_PSC" class="Aboutus_Video_PSC" controls="controls">
+                <source src="~/Content/Videos/xcel.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <p class="mont yemnak_description">
+                رغبةً من وزارة الصحة الكويتية في تنظيم عملية إجراء الكشف الطبي على الوافدين ، فقد رأت الوزارة إسناد مهمة فحص العمالة الى شركة خدمات للحلول المتكاملة والمملوكة بالكامل لشركة الخدمات العامه فقد بدأ المشروع في العمل سنة 2009 و ذلك سعياً لإحكام منظومة الأمن الصحي و الوقائي للبلاد ، من خلال شركاتها التابعة تحت إشراف المكتب الصحي الكويتي بالعديد من الدول منها جمهورية مصر العربية و المملكة الأردنية الهاشمية و جمهورية الهند و التي تضم تحتها أربع فروع في كل من  (مومبي- حيدر أباد – كوتشي- دلهي ) حيث تقوم هذه الأفرع في استقبال العمال منذ لحظة وصولهم للشركة حتى اتمام جميع الاجراءات المتعلقة بالفحص الطبي و إتمام صدور شهادة اللياقة  و تأتي فكرة هذا المشروع سعياً لتسهيل الإجراءات على العمالة الوافدة و أيضاً على وزارة الصحة الكويتية و لإظهار صورة إيجابية عن دولة
+                الكويت و مدى تقدمها في المجال الصحي
+
+            </p>
+        </div>
+
+    </div>
+</div>
+

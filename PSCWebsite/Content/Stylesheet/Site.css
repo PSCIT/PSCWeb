@@ -1,0 +1,2289 @@
+﻿
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900);
+
+body {
+    overflow-x: hidden;
+}
+
+.mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.newsskew, .footerskew {
+    display: none;
+}
+
+/* [(320X480) (320X533) (320X568)] [Custom, iPhone Retina, iPhone3-4-5, Microsoft Lumia, HTC 8X, Samsung Galaxy S-S2-S3Mini]*/
+@media only screen and (min-width : 320px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Off-Canvas */
+
+    div#contentarea {
+        position: relative;
+        width: 100%;
+        -moz-transition: transform 0.5s;
+        -o-transition: transform 0.5s;
+        -webkit-transition: transform 0.5s;
+        transition: transform 0.5s;
+    }
+
+    input[type="checkbox"]#togglebox {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        visibility: hidden;
+    }
+
+    label#navtoggler {
+        z-index: 999999;
+        display: block;
+        color: #fff;
+        position: absolute;
+        font-size: 35px;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+        label#navtoggler::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -0.3em;
+            left: 0;
+        }
+
+    nav#offcanvas-menu {
+        /* Full screen nav menu */
+        width: 250px;
+        background-color: #fff;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        visibility: hidden; /* this is for browsers that don't support CSS3 translate3d */
+        -moz-transform: translate3d(-250px, 0, 0);
+        -webkit-transform: translate3d(-250px, 0, 0);
+        transform: translate3d(-250px, 0, 0);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        position: fixed;
+        text-align: center;
+        overflow: auto;
+        -moz-transition: -moz-transform 0.5s, visibility 0s 0.5s;
+        /* transition settings */
+        -webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+        transition: transform 0.5s, visibility 0s 0.5s;
+    }
+
+        nav#offcanvas-menu ul {
+            padding-left: 0;
+        }
+
+            nav#offcanvas-menu ul li {
+                display: block;
+                text-align: left;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                font-size: 18px;
+                padding-left: 40px;
+                border-bottom: 2px solid rgba(189, 195, 199,0.3);
+            }
+
+                nav#offcanvas-menu ul li:first-child {
+                    margin-top: 40px;
+                }
+
+                nav#offcanvas-menu ul li a:hover {
+                    text-decoration: none;
+                }
+
+                nav#offcanvas-menu ul li a span {
+                    font-size: 40px;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+
+    input[type="checkbox"]#togglebox:checked ~ div#contentarea {
+        -moz-transform: translate3d(250px, 0, 0);
+        -webkit-transform: translate3d(250px, 0, 0);
+        transform: translate3d(250px, 0, 0);
+    }
+
+    input[type="checkbox"]#togglebox:checked ~ nav#offcanvas-menu {
+        /* nav state when corresponding checkbox is checked */
+        -moz-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible; /* this is for browsers that don't support CSS3 translate3d in showing the menu */
+        -moz-transition-delay: 0s; /* No delay for applying "visibility:visible" property when menu is going from "closed" to "open" */
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+    }
+
+    /*#endregion */
+
+    /*#region Header */
+
+    .row-menu {
+        border-bottom: 1px solid #fff;
+        /***********************************************/
+        /*Green-Background*/
+        /***********************************************/
+        /*background: -moz-linear-gradient(180deg, rgba(3,69,37,0.6) 0%, rgba(54,186,69,1) 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(54,186,69,1)), color-stop(100%, rgba(3,69,37,0.6)));
+        background: -webkit-linear-gradient(180deg, rgba(3,69,37,0.6) 0%, rgba(54,186,69,1) 100%);
+        background: -o-linear-gradient(180deg, rgba(3,69,37,0.6) 0%, rgba(54,186,69,1) 100%);
+        background: -ms-linear-gradient(180deg, rgba(3,69,37,0.6) 0%, rgba(54,186,69,1) 100%);
+        background: linear-gradient(270deg, rgba(3,69,37,0.6) 0%, rgba(54,186,69,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36BA45', endColorstr='#034525',GradientType=1 );*/
+        /***********************************************/
+        /*Light(Grey)-Background*/
+        /***********************************************/
+        /*background: rgb(238,238,238);
+        background: -moz-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+        background: -webkit-linear-gradient(-45deg, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+        background: linear-gradient(135deg, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 );*/
+        background: rgba(255,255,255,1);
+        background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+        background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+    }
+
+    #background {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: none;
+    }
+
+    header {
+        background-size: cover !important;
+        background: url('../Images/DSC_1563.jpg');
+        background-position: 50% 47%;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+        header .container-fluid {
+            position: relative;
+            z-index: 99999;
+        }
+
+
+
+        header h1 {
+            font-weight: 400;
+            font-size: 22px;
+            margin-top: 5px;
+        }
+
+            header h1 span {
+                font-size: 15px;
+            }
+
+        header h2 {
+            color: #fff;
+            text-align: center;
+            font-weight: 500;
+            /*font-size: 28px;*/
+            padding: 0 15px;
+            line-height: 35px;
+        }
+
+        header h3 {
+            color: #fff;
+            padding: 5px 25px 0;
+            line-height: 25px;
+            text-align: justify;
+            font-weight: 400;
+            font-size: 14px;
+            margin-top: 0;
+        }
+
+        header img {
+            width: 20%;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding: 2px;
+        }
+
+        header .overlay {
+            /*background-color: #034525; - for green*/
+            background-color: #666;
+            height: 100vh;
+            position: absolute;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9;
+        }
+
+        header .logo-container {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+    .logo-container h1 {
+        color: #F4DFC3;
+    }
+
+        .logo-container h1 span:first-child {
+            font-size: 23px;
+            line-height: 30px;
+        }
+
+    .arrow {
+        text-align: center;
+        animation: bounce 2s infinite;
+        display: none;
+    }
+
+        .arrow a {
+            color: #000;
+        }
+
+    /*#endregion */
+
+    /*#region aboutUs */
+
+    .about {
+        background-color: rgba(236, 240, 241,1.0);
+        background-image: url('../Images/DSC_1542.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 20px 0;
+    }
+
+        .about h1 {
+            color: #444;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .about h3 {
+            color: #444;
+            font-weight: 300;
+            line-height: 30px;
+            font-size: 18px;
+            text-align: justify;
+            padding: 0 10px;
+        }
+
+        .about img {
+            padding: 20px 20px 0;
+        }
+
+    .btn-flat {
+        border-color: #444;
+        color: #FFF;
+        margin-top: 8px;
+        background: -webkit-linear-gradient(top, #2980B9 -45px,#985F35 100%);
+    }
+
+        .btn-flat:hover {
+            background: #fff;
+            color: #444;
+        }
+
+    /*#endregion */
+
+    /*#region Services */
+
+    .services {
+        background-color: #fff;
+        padding: 30px 0 60px;
+    }
+
+        .services .heading {
+            font-size: 50px;
+        }
+
+        .services .card img {
+            width: 30%;
+            margin: 30px auto 0;
+        }
+
+        .services .card h2 {
+            font-size: 26px;
+            line-height: 35px;
+            text-align: center;
+        }
+
+        .services .card p {
+            text-align: justify;
+            padding: 0 10px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+    /*#endregion */
+
+    /*#region News-n-Events */
+
+    .news {
+        background-color: #fff;
+        /*background-image: url('https://static1.squarespace.com/static/5638c89de4b07330742ce717/t/566ef742d8af107232d51e28/1450112840581/dolphin-background.png?format=1500w');*/
+        /*background-image: url('../Images/newsbg.jpg');*/
+        /*background-image: url('http://creationmedia.in/wp-content/uploads/2015/03/More-Tumblr-Backgrounds-for-guys-light-gray.jpg');*/
+        background-image: url('http://www.intrawallpaper.com/static/images/White-Background-9B1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding: 100px 0 250px 0;
+    }
+
+        .news .heading {
+            font-size: 60px;
+            color: #444;
+            text-shadow: 0 3px 5px #fff;
+        }
+
+    .newsskew {
+        background-color: #FFFFFF;
+        transform: skewY(5deg);
+        height: 160px;
+        margin-bottom: -100px;
+        margin-top: -65px;
+    }
+
+    /*#region Card-Design */
+
+    .snip1527 {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        margin: 15% auto;
+        max-width: 310px;
+        min-width: 250px;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        width: 100%;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        /*border-top-left-radius: 20px;*/
+        box-shadow: 0 30px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+
+        .snip1527 * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+        }
+
+        .snip1527 img {
+            max-width: 100%;
+            vertical-align: top;
+            position: relative;
+        }
+
+        .snip1527 figcaption {
+            padding: 25px 20px 25px;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            color: #302f2f;
+        }
+
+            .snip1527 figcaption:before {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                content: '';
+                /*background: #700877;
+                background: -moz-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+                background: -webkit-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+                background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);*/
+                /*background: rgb(201,222,150);
+                background: -moz-linear-gradient(-45deg, rgba(201,222,150,1) 0%, rgba(138,182,107,1) 44%, rgba(57,130,53,1) 100%);
+                background: -webkit-linear-gradient(-45deg, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+                background: linear-gradient(135deg, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=1 );*/
+                /***********************************************/
+                /*Light(Grey)-Background*/
+                /***********************************************/
+                /*background: rgb(238,238,238);
+                background: -moz-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+                background: -webkit-linear-gradient(-45deg, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+                background: linear-gradient(135deg, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 );*/
+                /***********************************************/
+                /*Block-1*/
+                /***********************************************/
+                /*background: rgba(164,179,87,1);
+                background: -moz-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(183,207,45,1) 36%, rgba(154,176,26,1) 74%, rgba(117,137,12,1) 100%);
+                background: -webkit-gradient(left top, right top, color-stop(0%, rgba(164,179,87,1)), color-stop(36%, rgba(183,207,45,1)), color-stop(74%, rgba(154,176,26,1)), color-stop(100%, rgba(117,137,12,1)));
+                background: -webkit-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(183,207,45,1) 36%, rgba(154,176,26,1) 74%, rgba(117,137,12,1) 100%);
+                background: -o-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(183,207,45,1) 36%, rgba(154,176,26,1) 74%, rgba(117,137,12,1) 100%);
+                background: -ms-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(183,207,45,1) 36%, rgba(154,176,26,1) 74%, rgba(117,137,12,1) 100%);
+                background: linear-gradient(to right, rgba(164,179,87,1) 0%, rgba(183,207,45,1) 36%, rgba(154,176,26,1) 74%, rgba(117,137,12,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=1 );*/
+                /***********************************************/
+                /*Block-2*/
+                /***********************************************/
+                background: rgba(164,179,87,1);
+                background: -moz-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 59%, rgba(117,137,12,1) 100%);
+                background: -webkit-gradient(left top, right top, color-stop(0%, rgba(164,179,87,1)), color-stop(59%, rgba(117,137,12,1)), color-stop(100%, rgba(117,137,12,1)));
+                background: -webkit-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 59%, rgba(117,137,12,1) 100%);
+                background: -o-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 59%, rgba(117,137,12,1) 100%);
+                background: -ms-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 59%, rgba(117,137,12,1) 100%);
+                background: linear-gradient(to right, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 59%, rgba(117,137,12,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=1 );
+                /*background: rgba(54,97,16,1);
+                background: -moz-linear-gradient(left, rgba(54,97,16,1) 0%, rgba(39,71,11,1) 54%, rgba(31,59,8,1) 97%, rgba(31,59,8,1) 100%);
+                background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54,97,16,1)), color-stop(54%, rgba(39,71,11,1)), color-stop(97%, rgba(31,59,8,1)), color-stop(100%, rgba(31,59,8,1)));
+                background: -webkit-linear-gradient(left, rgba(54,97,16,1) 0%, rgba(39,71,11,1) 54%, rgba(31,59,8,1) 97%, rgba(31,59,8,1) 100%);
+                background: -o-linear-gradient(left, rgba(54,97,16,1) 0%, rgba(39,71,11,1) 54%, rgba(31,59,8,1) 97%, rgba(31,59,8,1) 100%);
+                background: -ms-linear-gradient(left, rgba(54,97,16,1) 0%, rgba(39,71,11,1) 54%, rgba(31,59,8,1) 97%, rgba(31,59,8,1) 100%);
+                background: linear-gradient(to right, rgba(54,97,16,1) 0%, rgba(39,71,11,1) 54%, rgba(31,59,8,1) 97%, rgba(31,59,8,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#366110', endColorstr='#1f3b08', GradientType=1 );*/
+                opacity: 0.8;
+                z-index: -1;
+            }
+
+        .snip1527 .date {
+            background-color: #fff;
+            border-radius: 50%;
+            color: #555;
+            font-size: 18px;
+            font-weight: 700;
+            min-height: 48px;
+            min-width: 48px;
+            padding: 10px 0;
+            position: absolute;
+            right: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            top: -25px;
+        }
+
+            .snip1527 .date span {
+                display: block;
+                line-height: 14px;
+            }
+
+            .snip1527 .date .month {
+                font-size: 11px;
+            }
+
+        .snip1527 h3,
+        .snip1527 p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .snip1527 h3 {
+            display: inline-block;
+            font-weight: 700;
+            letter-spacing: -0.4px;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .snip1527 p {
+            font-size: 0.8em;
+            line-height: 1.6em;
+            margin-bottom: 0px;
+        }
+
+        .snip1527 a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .snip1527:hover img,
+        .snip1527.hover img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Footer */
+
+    .footerskew {
+        background-color: #2C3E50;
+        transform: skewY(5deg);
+        height: 200px;
+        margin-top: -150px;
+    }
+
+    footer {
+        /*background-color: #002619;*/
+        /*background-color: #333;*/
+        background-color: #ECF0F1;
+        margin-top: -130px;
+        padding-bottom: 20px;
+    }
+
+        footer img {
+            width: 40%;
+            margin: 0 auto;
+            /*padding-top: 22px;*/
+        }
+
+        footer h1 {
+            /*color: #ECF0F1;*/
+            color: #444;
+            font-size: 22px;
+            padding-top: 20px;
+        }
+
+        footer .row:first-child div:nth-child(2n+2), footer .row:first-child div:nth-child(2n+3) {
+            padding-left: 32px;
+        }
+
+        footer ul {
+            padding-left: 0;
+        }
+
+            footer ul li {
+                list-style: none;
+            }
+
+                footer ul li a {
+                    /*color: #ecf0f1;*/
+                    color: #444;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 32px;
+                    letter-spacing: 0.5px;
+                    transition: .30s;
+                }
+
+                    footer ul li a:hover {
+                        color: rgba(250, 235, 215, 0.91);
+                        text-decoration: none;
+                        cursor: pointer;
+                        transition: .30s;
+                    }
+
+        footer h3 {
+            /*color: #ECF0F1;*/
+            color: #444;
+        }
+
+        footer h5 {
+            /*color: #ECF0F1;*/
+            color: #444;
+            line-height: 20px;
+            font-size: 13px;
+            letter-spacing: 0.2px;
+            font-weight: 200;
+        }
+
+        footer .box {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 0 8px;
+            line-height: 50px;
+            font-family: Entypo;
+            font-size: 28px;
+            text-align: center;
+            color: #fff;
+            border-radius: 10px;
+            background: #eee;
+            overflow: hidden;
+            cursor: pointer;
+            transition: .30s;
+        }
+
+            footer .box:hover {
+                transition: .30s;
+                color: white;
+            }
+
+            footer .box i{
+                color: #333;
+            }
+
+                footer .box:hover i {
+                    color: white;
+                }
+
+
+        footer #facebook:hover {
+            background-color: #3a5795;
+        }
+
+        footer #instagram:hover {
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+        }
+
+        footer #googlePlus:hover {
+            background-color: #dd4b39;
+        }
+
+        footer #youtube:hover {
+            background-color: #DC4539;
+        }
+
+
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .Aboutus_Video_PSC {
+        width: 100%;
+    }
+
+    .AboutUs_OurMission {
+        margin: 30px 0;
+    }
+
+        .AboutUs_OurMission h3 {
+            font-size: 2.2rem;
+            margin: 12px;
+            padding: 0;
+        }
+
+        .AboutUs_OurMission p {
+            text-align: justify;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+        }
+
+    /*#endregion */
+
+    /*#region Page : Home/Yemnak */
+
+    .yemnak_description {
+        text-align: justify;
+        line-height: 2.3rem;
+        padding: 3rem 0.8rem;
+    }
+
+    /*#endregion */
+
+}
+
+/*[(360X480) (360X600)] [Blackberry Torch 9800, Sony Xperia Z3, Samsung Galaxy-Nexus]*/
+@media only screen and (min-width : 360px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header h2 {
+        letter-spacing: 0.3px;
+    }
+
+    header h3 {
+        padding: 5px 36px 0;
+        line-height: 28px;
+    }
+
+    header .logo-container {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+
+    /*#endregion */
+
+    /*#region About */
+
+    .about img {
+        padding: 50px 20px 0;
+    }
+
+    .about h1 {
+        font-size: 36px;
+    }
+
+    .about h3 {
+        padding: 0 12px 12px;
+    }
+
+    .btn-flat {
+        margin-bottom: 10px;
+    }
+
+    /*#endregion */
+
+    /*#region Services */
+
+    .services .card img {
+        width: 40%;
+        margin: 26px auto 0;
+    }
+
+    /*#endregion */
+
+    /*#region Mews-n-Events */
+
+    .newsskew {
+        height: 120px;
+    }
+
+    /*#endregion */
+
+    /*#region Footer */
+
+    footer h1 {
+        font-size: 26px;
+    }
+
+    footer ul li a {
+        line-height: 36px;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+
+}
+
+/*[(360X598) (360X640)] [LG-G3-G4-G5, Samsung Galaxy-S4-S5-S6-S7-Note2-Note3-Note4]*/
+@media only screen and (min-width:360px) and (min-height:640px), (min-width:360px) and (min-height:598px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header img {
+        width: 22%;
+        padding: 25px 0 10px;
+    }
+
+    header h2 {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        margin-top: 30px;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .AboutUs_OurMission {
+        margin: 35px 15px;
+    }
+
+        .AboutUs_OurMission p {
+            font-size: 1.7rem;
+            line-height: 3rem;
+        }
+
+    /*#endregion */
+}
+
+/* [(375X667)] [Apple iPhone 6-6s-7] */
+@media only screen and (min-width : 375px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header img {
+        padding: 45px 0 10px;
+    }
+
+    header h3 {
+        padding: 5px 40px 0;
+        line-height: 30px;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+
+}
+
+/* [(390X390)] [Blackberry Classic] */
+@media only screen and (min-width : 390px) and (min-width: 390px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header img {
+        padding: 10px 0 2px;
+        width: 12%;
+    }
+
+    header .logo-container {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+        header .logo-container h1 span:first-child {
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+    header h1 {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+
+    header h2 {
+        margin-top: 18px;
+    }
+
+    header h3 {
+        padding: 0 15px 0;
+        line-height: 26.5px;
+        font-size: 14.5px;
+    }
+
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .AboutUs_OurMission {
+        margin: 35px 15px;
+    }
+
+        .AboutUs_OurMission p {
+            font-size: 1.7rem;
+            line-height: 3rem;
+        }
+
+    /*#endregion */
+}
+
+/*[(400X640)] [Samsung Galaxy Note]*/
+@media only screen and (min-width:400px) and (min-height:640px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+
+    header .logo-container h1 span:first-child {
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    header img {
+        padding: 25px 0 10px;
+        width: 18%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        margin-top: 42px;
+    }
+
+    header h3 {
+        padding: 5px 16px 0;
+        line-height: 32px;
+        font-size: 19px;
+    }
+
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .AboutUs_OurMission {
+        margin: 35px 15px;
+    }
+
+        .AboutUs_OurMission h3 {
+            font-size: 2.6rem;
+            margin: 16px;
+        }
+
+        .AboutUs_OurMission p {
+            font-size: 1.9rem;
+            line-height: 3.5rem;
+        }
+
+    /*#endregion */
+}
+
+/*[(414X736)] [Apple iPhone 6 Plus, 6s Plus]*/
+@media only screen and (min-width:414px) and (min-height:736px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header img {
+        width: 16%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h3 {
+        font-size: 19.5px;
+        padding: 5px 31px 0;
+    }
+    /*#endregion */
+
+    /*#region News-n-Events */
+
+    .newsskew {
+        margin-top: -60px;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .AboutUs_OurMission {
+        margin: 35px 10px;
+    }
+
+        .AboutUs_OurMission h3 {
+            font-size: 2.6rem;
+        }
+
+        .AboutUs_OurMission p {
+            font-size: 2.1rem;
+            line-height: 3.8rem;
+        }
+
+    /*#endregion */
+
+}
+
+/*[(432X768)] [Microsoft Lumia 1520]*/
+@media only screen and (min-width:432px) and (min-height:768px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header img {
+        padding: 20px 0 10px;
+    }
+
+    header h2 {
+        margin-top: 110px;
+    }
+
+    header h3 {
+        font-size: 19px;
+    }
+
+    /*#endregion */
+
+    /*#region News-n-Events */
+
+    .newsskew {
+        margin-top: -56px;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .AboutUs_OurMission {
+        margin: 35px 18px;
+    }
+
+        .AboutUs_OurMission h3 {
+            font-size: 2.6rem;
+        }
+
+        .AboutUs_OurMission p {
+            font-size: 2.1rem;
+            line-height: 3.8rem;
+        }
+
+    /*#endregion */
+}
+
+/* [(480X320)] [LandScape = iPhone Retina, iPhone3-4-5, Microsoft Lumia, HTC 8X, Samsung Galaxy S-S2-S3Mini]*/
+@media only screen and (min-width : 480px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Off-Canvas */
+
+    nav#offcanvas-menu ul li:first-child {
+        margin-top: 10px;
+    }
+
+    /*#endregion */
+
+    /*#region Header */
+
+    header img {
+        padding: 17px 0 10px;
+        width: 11%;
+        float: left;
+        margin-left: 70px;
+    }
+
+    header h1 {
+        font-size: 26px;
+        padding-top: 28px;
+    }
+
+    header h2 {
+        margin-top: 30px;
+        font-size: 32px;
+    }
+
+    /*#endregion */
+
+    /*#region aboutUs */
+
+    .about img {
+        padding: 45px 72px 0;
+    }
+
+    .about h3 {
+        line-height: 36px;
+    }
+
+    /*#endregion */
+
+    /*#region News-n-Events */
+
+    .newsskew {
+        height: 125px;
+        margin-top: -45px;
+    }
+
+    .news .heading {
+        font-size: 53px;
+    }
+
+    /*#endregion */
+
+    /*#region Footer */
+
+    .footerskew {
+        height: 162px;
+    }
+
+    footer img {
+        width: 28%;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+}
+
+/* [(504X504)] [Blackberry Passport]*/
+@media only screen and (min-width : 504px) and (min-height:504px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header img {
+        margin-right: -23px;
+    }
+
+    header h2 {
+        margin-top: 40px;
+        font-size: 42px;
+        line-height: 43px;
+    }
+
+    header h3 {
+        padding: 5px 16px 0;
+        line-height: 36px;
+        font-size: 19px;
+    }
+
+    /*#endregion */
+
+    /*#region Services */
+
+    .services .card img {
+        width: 25%;
+    }
+
+    /*#endregion */
+
+    /*#region News */
+
+    .newsskew {
+        height: 125px;
+        margin-top: -53px;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .AboutUs_OurMission {
+        margin: 35px 28px;
+    }
+
+        .AboutUs_OurMission h3 {
+            font-size: 2.6rem;
+        }
+
+        .AboutUs_OurMission p {
+            font-size: 1.8rem;
+            line-height: 3.8rem;
+        }
+
+    /*#endregion */
+
+}
+
+/* [(533X320)] [Samsung Galaxy S-S2-S3 Mini]*/
+@media only screen and (min-width : 533px) and (min-height:320px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header img {
+        margin-left: 89px;
+        margin-right: -30px;
+    }
+
+    /*#endregion */
+
+    /*#region About */
+
+    .about img {
+        padding: 45px 100px 0;
+    }
+
+    /*#endregion */
+
+    /*#region Services */
+
+    .services .card img {
+        width: 25%;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .AboutUs_OurMission {
+        margin: 2rem 3rem;
+    }
+
+        .AboutUs_OurMission h3 {
+            font-size: 2.2rem;
+            margin: 1.8rem;
+            padding: 0;
+        }
+
+        .AboutUs_OurMission p {
+            text-align: justify;
+            font-size: 1.7rem;
+            line-height: 3.2rem;
+        }
+
+    /*#endregion */
+
+}
+
+/* [(568X320)] [Apple iPhone 5, Apple iPod Touch]*/
+@media only screen and (min-width : 568px) and (min-height:320px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header h1 {
+        font-size: 28px;
+        padding-top: 32px;
+    }
+
+    /*#endregion */
+
+    /*#region About */
+
+    .about img {
+        padding: 45px 130px 0;
+    }
+
+    /*#endregion */
+
+    /*#region name */
+
+    .services .card img {
+        width: 22%;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+}
+
+/* [(600X360)] [Samsung Galaxy Nexus]*/
+@media only screen and (min-width : 600px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header h2 {
+        margin-top: 21px;
+        font-size: 35px;
+    }
+
+    header h3 {
+        padding: 5px 42px 0;
+        line-height: 28.5px;
+        font-size: 18px;
+    }
+
+    header img {
+        margin-left: 111px;
+        margin-right: -50px;
+        padding: 14px 0 15px;
+    }
+
+
+    /*#endregion */
+
+    /*#region Services */
+
+    .services .card p {
+        padding: 0 30px;
+    }
+
+    /*#endregion */
+
+    /*#region News */
+
+    .newsskew {
+        height: 128px;
+        margin-top: -53px;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+}
+
+/* [(600X960)] [LG G Pad 8.3, Asus Nexus 7 (v2), ]*/
+@media only screen and (min-width : 600px)and (min-height:960px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header {
+        height: 500px;
+    }
+
+        header .overlay {
+            height: 500px;
+        }
+
+        header img {
+            margin-left: 92px;
+            margin-right: -66px;
+            padding: 14px 0 15px;
+        }
+
+        header h3 {
+            padding: 5px 28px 0;
+            line-height: 42px;
+            font-size: 22px;
+        }
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .AboutUs_OurMission {
+        margin: 2rem 3rem;
+    }
+
+        .AboutUs_OurMission h3 {
+            font-size: 2.5rem;
+            margin: 1.8rem;
+            padding: 0;
+        }
+
+        .AboutUs_OurMission p {
+            font-size: 2rem;
+            line-height: 3.5rem;
+        }
+
+    /*#endregion */
+}
+
+/* [(640X360) (640X384)] (640X400) [LG-G3-G4-G5, Samsung Galaxy-S4-S5-S6-S7-Note2-Note3-Note4]*/
+@media only screen and (min-width : 640px)and (min-height:360px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header img {
+        margin-left: 109px;
+        margin-right: -55px;
+        width: 10%;
+        padding: 22px 0 15px;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .AboutUs_OurMission {
+        margin: 5rem 5rem;
+    }
+
+        .AboutUs_OurMission h3 {
+            font-size: 2.5rem;
+            margin: 1.8rem;
+            padding: 0;
+        }
+
+        .AboutUs_OurMission p {
+            font-size: 2rem;
+            line-height: 4rem;
+        }
+
+    /*#endregion */
+}
+
+/* [(667X375) [Apple iPhone 6-6s-7]*/
+@media only screen and (min-width : 667px)and (min-height:375px) {
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header h1 {
+        font-size: 34px;
+        padding-top: 35px;
+    }
+
+    header h2 {
+        margin-top: 30px;
+    }
+
+    /*#endregion */
+
+    /*#region About */
+
+    .about img {
+        padding: 35px 153px 10px;
+    }
+
+    .about h1 {
+        font-size: 45px;
+        line-height: 53px;
+    }
+
+    /*#endregion */
+
+    /*#region Services */
+
+    .services .card img {
+        width: 20%;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+}
+
+/* [(720X1280) [Microsoft Surface Pro 1 & 2]*/
+@media only screen and (min-width : 720px) and (min-height:1280px) {
+
+    /*#region News */
+
+    .newsskew {
+        height: 135px;
+        margin-top: -45px;
+    }
+
+    /*#endregion */
+
+}
+
+/*[(736X414)] [Apple iPhone 6 Plus, 6s Plus]*/
+@media only screen and (min-width:736px) and (min-height:414px) {
+    /*#region News */
+
+    .newsskew {
+        height: 135px;
+        margin-top: -43px;
+    }
+
+    /*#endregion */
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Off-Canvas */
+    nav#offcanvas-menu ul li:first-child {
+        margin-top: 10px;
+    }
+    /*#endregion */
+
+    /*#region news-n-events */
+
+    .newsskew {
+        height: 140px;
+        margin-top: -45px;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .AboutUs_OurMission {
+        margin: 2.5rem;
+    }
+
+        .AboutUs_OurMission h3 {
+            font-size: 2.5rem;
+            margin: 1.8rem;
+            padding: 0;
+        }
+
+        .AboutUs_OurMission p {
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            padding: 0 1.4rem;
+        }
+
+    /*#endregion */
+
+}
+
+/* [(800X1280) (800X480)] [Microsoft Surface Pro 1 & 2]*/
+@media only screen and (min-width : 800px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) and (min-height:600px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    #background {
+        display: block;
+    }
+
+    header {
+        height: 100vh;
+        background: none;
+        position: relative;
+        text-align: center;
+    }
+
+        header .logo-container h1 {
+            float: left;
+            font-size: 28px;
+            margin-top: 6px;
+        }
+
+            header .logo-container h1 span:first-child {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+        header .logo-container img {
+            margin-left: 290px;
+            margin-right: 5px;
+            width: 7%;
+        }
+
+        header .overlay {
+            /*opacity: 0.2;*/
+        }
+
+        header ul li {
+            display: inline-block;
+            margin: 10px 15px;
+            padding-top: 10px;
+        }
+
+            header ul li a {
+                font-size: 18px;
+                font-weight: 400;
+                /*color: #ecf0f1; - for green color*/
+                color: #555;
+            }
+
+                header ul li a:hover {
+                    text-decoration: none;
+                    padding: 5px 0;
+                    border-bottom: 1px solid #444;
+                    border-top: 1px solid #444;
+                    transition: all 0.5s ease;
+                    color: #444;
+                }
+
+    .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+        text-decoration: none;
+        border: none;
+        padding: 3px 20px !important;
+        background: none;
+    }
+
+
+    header img {
+        width: 8%;
+        align-self: center;
+        float: left;
+        margin-right: 10px;
+        margin-left: 20%;
+        padding: 2px;
+        margin-top: 20px;
+    }
+
+    header .slickclass h2, header .slickclass h3 {
+        color: #444;
+    }
+
+    header .slickclass .slickdiv {
+        border: 2px solid #444;
+        margin-top: 30px;
+        border-radius: 25px;
+        /***********************************************/
+        /*Green-Background*/
+        /***********************************************/
+        /*background: -moz-linear-gradient(180deg, rgba(3,69,37,0.6) 0%, rgba(54,186,69,1) 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(54,186,69,1)), color-stop(100%, rgba(3,69,37,0.6)));
+        background: -webkit-linear-gradient(180deg, rgba(3,69,37,0.6) 0%, rgba(54,186,69,1) 100%);
+        background: -o-linear-gradient(180deg, rgba(3,69,37,0.6) 0%, rgba(54,186,69,1) 100%);
+        background: -ms-linear-gradient(180deg, rgba(3,69,37,0.6) 0%, rgba(54,186,69,1) 100%);
+        background: linear-gradient(270deg, rgba(3,69,37,0.6) 0%, rgba(54,186,69,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36BA45', endColorstr='#034525',GradientType=1 );*/
+        /***********************************************/
+        /*Light(Grey)-Background*/
+        /***********************************************/
+        /*background: rgb(238,238,238);
+        background: -moz-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+        background: -webkit-linear-gradient(-45deg, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+        background: linear-gradient(135deg, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 );*/
+        background: rgba(255,255,255,1);
+        background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+        background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+    }
+
+        header .slickclass .slickdiv img {
+            width: 100%;
+            margin: 40px 0;
+            border: 2px solid #444;
+        }
+
+    /*#endregion */
+
+    /*#region Services */
+
+    .services {
+        padding-bottom: 75px;
+    }
+
+    /*#endregion */
+
+    /*#region News */
+
+    .newsskew {
+        height: 145px;
+        margin-top: -50px;
+    }
+
+
+    /*#endregion */
+
+    /*#region Footer */
+
+    footer {
+        margin-top: -110px;
+    }
+
+        footer img {
+            width: 55%;
+            padding-top: 30px;
+        }
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .AboutUs_OurMission p {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    /*#endregion */
+}
+
+@media only screen and (min-width : 992px) and (min-height:768px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header .slickclass .slickdiv {
+        margin-top: 100px;
+    }
+
+    /*#endregion */
+
+    /*#endregion */
+
+}
+
+/* [Various Tablet]*/
+@media only screen and (min-width : 1024px) and (min-height:600px) {
+
+    /*#region Header */
+
+    header .logo-container img {
+        margin-left: 330px;
+        width: 6%;
+        margin-top: 15px;
+    }
+
+    header .logo-container h1 span:first-child {
+        font-size: 27px;
+    }
+
+    header h1 {
+        font-size: 27px;
+        padding-top: 35px;
+    }
+
+    header .slickclass .slickdiv {
+        margin-top: 30px;
+    }
+
+    /*#endregion */
+
+    /*#region Page : Home/Yemnak */
+
+    .yemnak_description {
+        font-size: 2rem;
+        line-height: 3.3rem;
+    }
+
+    /*#endregion */
+}
+
+/* [Apple Ipads]*/
+@media only screen and (min-width : 1024px) and (min-height:768px) {
+
+    /*#region Header */
+
+    header .logo-container img {
+        margin-left: 332px;
+        margin-top: 26px;
+    }
+
+
+    header .slickclass .slickdiv {
+        margin-top: 120px;
+    }
+
+    /*#endregion */
+
+}
+
+/* [Apple Ipads]*/
+@media only screen and (min-width : 1024px) and (min-height:1366px) {
+
+    /*#region Page : Home/Index */
+
+    /*#region Header */
+
+    header {
+        height: 600px;
+    }
+
+        header h3 {
+            font-size: 17px;
+        }
+
+        header .slickclass .slickdiv {
+            margin-top: 30px;
+        }
+
+        header .overlay {
+            height: 600px;
+        }
+
+
+    /*#endregion */
+
+    /*#endregion */
+
+    /*#region Page : Home/AboutUS */
+
+    .AboutUs_OurMission {
+        margin: 2.5rem;
+    }
+
+        .AboutUs_OurMission h3 {
+            font-size: 2.5rem;
+            margin: 1.8rem;
+            padding: 0;
+        }
+
+        .AboutUs_OurMission p {
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            padding: 0 1.4rem;
+        }
+
+    /*#endregion */
+}
+
+/* [Apple iPhone 7]*/
+@media only screen and (min-width : 1080px) and (min-height:1920px) {
+
+    .newsskew {
+        height: 150px;
+        margin-top: -50px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+    /*#region Header */
+
+    header .logo-container img {
+        width: 12%;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+
+    header .logo-container h1 {
+        margin-top: -8px;
+        margin-bottom: 20px;
+    }
+
+    header ul {
+        margin-top: 25px;
+    }
+
+    header h3 {
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    header .slickclass .slickdiv {
+        margin-top: 85px;
+    }
+
+    /*#endregion */
+
+    /*#region Services */
+
+    .services {
+        padding-bottom: 95px;
+    }
+
+        .services .card img {
+            width: 75%;
+        }
+
+    /*#endregion */
+
+    /*#region News */
+
+    .newsskew {
+        height: 160px;
+        margin-top: -71px;
+    }
+
+    /*#endregion */
+}
+
+/* [(1280X720)] [Microsoft Surface Pro 1 & 2]*/
+@media only screen and (min-width : 1280px)and (min-height:720px) {
+    /*#region Header */
+
+    header .slickclass .slickdiv {
+        margin-top: 125px;
+    }
+
+    /*#endregion */
+}
+
+/* [(1280X800) [Samsung Galaxy Tabs]*/
+@media only screen and (min-width : 1280px)and (min-height:800px) {
+}
+
+/* [(1366X768) [microsoft Surface and Most desktop devices]*/
+@media only screen and (min-width : 1366px) {
+
+    header .logo-container img {
+        width: 10%;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    .footerskew {
+        height: 175px;
+    }
+
+    footer ul {
+        margin-bottom: 60px;
+    }
+}
+
+/* [(1366X1024) [Apple iPad Pro]*/
+@media only screen and (min-width : 1366px)and (min-height:1024px) {
+    /*#region Header */
+
+    header {
+        height: 600px;
+    }
+
+        header h3 {
+            font-size: 19px;
+        }
+
+        header .slickclass .slickdiv {
+            margin-top: 50px;
+        }
+
+        header .overlay {
+            height: 600px;
+        }
+
+
+    /*#endregion */
+}
+
+/* [surface pro]*/
+@media only screen and (min-width : 1440px) and (min-height:1024px) {
+
+    .newsskew {
+        height: 165px;
+        margin-top: -70px;
+    }
+
+    /*#region Page : Home/Yemnak */
+
+    .yemnak_description {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+
+    /*#endregion */
+}
+
+/* [Google Samsung LG Devices] [Portrait]*/
+@media only screen and (min-width : 1440px) and (min-height:2560px) {
+}
+
+/* [iPad 1 & 2, Nexus]*/
+@media only screen and (min-width : 1536px) and (min-height:2048px) {
+
+    /*#region News */
+
+    .newsskew {
+        height: 170px;
+    }
+
+    /*#endregion */
+}
+
+@media only screen and (min-width : 1920px) and (min-height:1080px) {
+
+    /*#region Header */
+
+    header {
+        height: 800px;
+    }
+
+        header h2 {
+            margin-top: 95px;
+            margin-bottom: 15px;
+            font-size: 46px;
+        }
+
+        header h3 {
+            font-size: 27px;
+            line-height: 53px;
+        }
+
+        header .logo-container img {
+            width: 6%;
+            margin-left: 180px;
+        }
+
+        header .overlay {
+            height: 800px;
+        }
+
+    /*#endregion */
+
+    /*#region Service */
+
+    .services {
+        padding-bottom: 147px;
+    }
+
+    /*#endregion */
+
+    /*#region News */
+
+    .newsskew {
+        height: 190px;
+        margin-top: -120px;
+    }
+
+    /*#endregion */
+
+    /*#region Footer */
+
+    footer {
+        margin-top: -90px;
+    }
+
+    .footerskew {
+        height: 200px;
+    }
+
+    /*#endregion */
+}
+
+/* [iPad air 1 & 2]*/
+@media only screen and (min-width : 2048px) and (min-height:1536px) {
+}
+
+/* [iPad pro]*/
+@media only screen and (min-width : 2048px) and (min-height:2732px) {
+}
+
+/* [Google Samsung LG Devices] [Landscape]*/
+@media only screen and (min-width : 2560px) and (min-height:1440px) {
+
+    /*#region Header */
+
+    header {
+        height: 850px;
+    }
+
+        header h2 {
+            margin-top: 100px;
+            margin-bottom: 30px;
+            font-size: 70px;
+        }
+
+        header h3 {
+            font-size: 32px;
+            line-height: 68px;
+        }
+
+        header .logo-container img {
+            width: 5%;
+            margin-left: 200px;
+        }
+
+        header .overlay {
+            height: 100%;
+        }
+
+    /*#endregion */
+
+    /*#region Services */
+    .services {
+        padding-bottom: 152px;
+    }
+
+    /*#endregion */
+
+    /*#region news */
+
+    .newsskew {
+        height: 214px;
+        margin-top: -117px;
+    }
+
+    /*#endregion */
+
+    /*#region Footer */
+
+    footer {
+        margin-top: -118px;
+    }
+
+    .footerskew {
+        height: 245px;
+    }
+
+    /*#endregion */
+}
+
+
+
+
+
+
+
+
+
+
+.map {
+    width: 700px;
+    height: 380px;
+    margin: calc(50vh - 190px) auto;
+    box-shadow: 0 0 40px 0px rgba(44, 62, 80,0.6);
+    background: rgb(240, 240, 240);
+    font-family: 'Montserrat', sans-serif;
+    max-width: calc(100vw - 60px);
+}
+
+#map {
+    width: 65%;
+    height: 380px;
+    display: inline-block;
+}
+
+.map-c {
+    float: right;
+    width: 35%;
+    height: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    font-weight: normal;
+    color: rgb(60, 60, 70);
+    font-size: 28px;
+}
+
+p {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.det {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/*i {
+    float: left;
+    font-size: 18px !important;
+    margin: 0 8px 0 0;
+}*/
+
+@media only screen and (max-width: 720px) {
+    .map {
+        height: 450px;
+        margin: calc(50vh - 225px) auto;
+        overflow: hidden;
+    }
+
+    #map {
+        width: 100%;
+        height: 200px;
+    }
+
+    .map-c {
+        float: right;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    p {
+        display: none;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .det {
+        margin-bottom: 9px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.gallery {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+[class*='thumbnail-'] {
+    background: #000;
+    width: 33.33%;
+    height: auto;
+    float: left;
+    padding: 5px 5px 3px 5px;
+    cursor: zoom-in;
+}
+
+    [class*='thumbnail-'] img {
+        max-width: 100%;
+    }
+
+[class*='large-'] {
+    background: #000;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    display: none;
+}
+
+    [class*='large-'] img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+.prev {
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    float: left;
+}
+
+.next {
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    float: right;
+}
+
+.close {
+    color: #ff2759;
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    float: right;
+    cursor: zoom-out;
+}
+
+[class*='thumbnail-'] {
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    cursor: zoom-in;
+}
+
+    [class*='thumbnail-']:hover img {
+        transition: .3s linear;
+        transition-delay: 300ms;
+        transform: /* rotate(5deg) */ scale(1.4);
+    }
+
+    [class*='thumbnail-'] > .caption {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        padding: 15px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        opacity: 0.8;
+    }
+
+    [class*='thumbnail-']:hover > .caption {
+        display: block;
+    }
+
+@media screen and (max-width:480px) {
+    .caption h3 {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DDB38FFE-E3A5-49C8-B172-C986DF14FD5D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PSCWebsite</RootNamespace>
+    <AssemblyName>PSCWebsite</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\BOD_Ar.jpg" />
+    <Content Include="Content\Images\BOD_En.jpg" />
+    <Content Include="Content\Images\CO_AR.jpg" />
+    <Content Include="Content\Images\CO_EN.jpg" />
+    <Content Include="Content\Images\DSC_1534.JPG" />
+    <Content Include="Content\Images\DSC_1541.JPG" />
+    <Content Include="Content\Images\DSC_1542.jpg" />
+    <Content Include="Content\Images\DSC_1563.JPG" />
+    <Content Include="Content\Images\ExpatexamProj.png" />
+    <Content Include="Content\Images\foooter psc svg green\PSCLogo-grey.svg" />
+    <Content Include="Content\Images\HealthProject.png" />
+    <Content Include="Content\Images\KWG1.jpg" />
+    <Content Include="Content\Images\KWG2.jpg" />
+    <Content Include="Content\Images\KWG3.jpg" />
+    <Content Include="Content\Images\KWG4.jpg" />
+    <Content Include="Content\Images\mdpic.jpg" />
+    <Content Include="Content\Images\newsbg.jpg" />
+    <Content Include="Content\Images\News_Events\1.jpg" />
+    <Content Include="Content\Images\News_Events\10.jpg" />
+    <Content Include="Content\Images\News_Events\10u.jpg" />
+    <Content Include="Content\Images\News_Events\11.jpg" />
+    <Content Include="Content\Images\News_Events\12.jpg" />
+    <Content Include="Content\Images\News_Events\13.jpg" />
+    <Content Include="Content\Images\News_Events\14.jpg" />
+    <Content Include="Content\Images\News_Events\15.jpg" />
+    <Content Include="Content\Images\News_Events\16.jpg" />
+    <Content Include="Content\Images\News_Events\17.jpg" />
+    <Content Include="Content\Images\News_Events\18.jpg" />
+    <Content Include="Content\Images\News_Events\19.jpg" />
+    <Content Include="Content\Images\News_Events\1u.jpg" />
+    <Content Include="Content\Images\News_Events\2.jpg" />
+    <Content Include="Content\Images\News_Events\20.jpg" />
+    <Content Include="Content\Images\News_Events\21.jpg" />
+    <Content Include="Content\Images\News_Events\22.jpg" />
+    <Content Include="Content\Images\News_Events\23.jpg" />
+    <Content Include="Content\Images\News_Events\24.jpg" />
+    <Content Include="Content\Images\News_Events\25.jpg" />
+    <Content Include="Content\Images\News_Events\2u.jpg" />
+    <Content Include="Content\Images\News_Events\3.jpg" />
+    <Content Include="Content\Images\News_Events\3u.jpg" />
+    <Content Include="Content\Images\News_Events\4.jpg" />
+    <Content Include="Content\Images\News_Events\4u.jpg" />
+    <Content Include="Content\Images\News_Events\5.jpg" />
+    <Content Include="Content\Images\News_Events\5u.jpg" />
+    <Content Include="Content\Images\News_Events\6.jpg" />
+    <Content Include="Content\Images\News_Events\6u.jpg" />
+    <Content Include="Content\Images\News_Events\7.jpg" />
+    <Content Include="Content\Images\News_Events\7u.jpg" />
+    <Content Include="Content\Images\News_Events\8.jpg" />
+    <Content Include="Content\Images\News_Events\8u.jpg" />
+    <Content Include="Content\Images\News_Events\9.jpg" />
+    <Content Include="Content\Images\News_Events\9u.jpg" />
+    <Content Include="Content\Images\News_Events\lunch\1.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\10.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\11.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\12.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\13.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\14.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\15.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\16.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\17.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\18.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\19.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\2.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\20.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\21.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\3.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\4.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\5.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\6.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\7.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\8.JPG" />
+    <Content Include="Content\Images\News_Events\lunch\9.JPG" />
+    <Content Include="Content\Images\officeEnvironment.jpeg" />
+    <Content Include="Content\Images\PSCLogo-grey.svg" />
+    <Content Include="Content\Images\PSCLogo.svg" />
+    <Content Include="Content\Images\PSCLogowithouttext.svg" />
+    <Content Include="Content\Images\Services.png" />
+    <Content Include="Content\Images\services.svg" />
+    <Content Include="Content\Images\Xcel.png" />
+    <Content Include="Content\Images\Yemnak.jpg" />
+    <Content Include="Content\Images\YemnakProj.png" />
+    <Content Include="Content\Stylesheet\SiteAr.css" />
+    <Content Include="Content\Stylesheet\Site.css" />
+    <Content Include="Content\Stylesheet\animate.min.css" />
+    <Content Include="Content\Stylesheet\font-awesome.min.css" />
+    <Content Include="Content\Videos\city_1.mp4" />
+    <Content Include="Content\Videos\ehnaEzwetk.mp4" />
+    <Content Include="Content\Videos\elloby.mp4" />
+    <Content Include="Content\Videos\ExpatsExaminition.mp4" />
+    <Content Include="Content\Videos\HealthInsurance.mp4" />
+    <Content Include="Content\Videos\Kuwait.mp4" />
+    <Content Include="Content\Videos\ministrerOfHealth.mp4" />
+    <Content Include="Content\Videos\MOH.mp4" />
+    <Content Include="Content\Videos\PSC.mp4" />
+    <Content Include="Content\Videos\tawEllel3.mp4" />
+    <Content Include="Content\Videos\tawEllelcall.mp4" />
+    <Content Include="Content\Videos\xcel.mp4" />
+    <Content Include="Content\Videos\yemnak.mp4" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\Videos\yemnak.vtt" />
+    <None Include="Properties\PublishProfiles\PscWeb.pubxml" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\site.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="Views\Home\AboutUs.cshtml" />
+    <Content Include="Views\Home\Services.cshtml" />
+    <Content Include="Views\Home\Yemnak.cshtml" />
+    <Content Include="Views\Home\Xcel.cshtml" />
+    <Content Include="Views\Home\ExpatsExamProj.cshtml" />
+    <Content Include="Views\Home\Contactus.cshtml" />
+    <Content Include="Views\Home\Careers.cshtml" />
+    <Content Include="Views\Shared\_LayoutAr.cshtml" />
+    <Content Include="Views\Home\IndexAr.cshtml" />
+    <Content Include="Views\Home\AboutUsAr.cshtml" />
+    <Content Include="Views\Home\ServicesAr.cshtml" />
+    <Content Include="Views\Home\YemnakAr.cshtml" />
+    <Content Include="Views\Home\XcelAr.cshtml" />
+    <Content Include="Views\Home\ExpatsExamProjAr.cshtml" />
+    <Content Include="Views\Home\CareersAr.cshtml" />
+    <Content Include="Views\Home\ContactusAr.cshtml" />
+    <Content Include="Views\Home\Media.cshtml" />
+    <Content Include="Views\Home\MediaAr.cshtml" />
+    <Content Include="Views\Home\Media2.cshtml" />
+    <Content Include="Views\Home\Media2Ar.cshtml" />
+    <Content Include="Views\Home\Media3.cshtml" />
+    <Content Include="Views\Home\Media3Ar.cshtml" />
+    <Content Include="Views\Home\MediaAll.cshtml" />
+    <Content Include="Views\Home\MediaAllAr.cshtml" />
+    <Content Include="Views\Home\Media4.cshtml" />
+    <Content Include="Views\Home\Media4ar.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12348</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4356/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

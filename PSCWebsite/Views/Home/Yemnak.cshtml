@@ -1,0 +1,78 @@
+﻿
+
+@{ ViewBag.Title = "Yemnak Concierge"; }
+
+<style>
+    @@media only screen and (min-width : 320px) {
+        .slickclass {
+            display: none;
+        }
+
+        header {
+            background: none;
+            height: auto;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        .footerskew {
+            display: none;
+        }
+
+        footer {
+            margin: 0;
+        }
+
+            footer img {
+                padding-top: 30px;
+            }
+    }
+</style>
+
+<div style="position:absolute;right:120px;top:10px;z-index:999999999;">
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> | <a class="mont" style="color:#444" href="">English</a> | <a style="font-family: 'Droid Arabic Kufi', sans-serif;color:#444" href=@Url.Action("YemnakAr", "Home")>العربي</a>
+</div>
+
+<div class="container">
+
+    <br />
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+
+            <a class="btn btn-lg btn-success" href=@Url.Action("Services", "Home")>Health Insurance Project</a>
+            <a class="btn btn-lg btn-success" href=@Url.Action("ExpatsExamProj", "Home")>Expats Examinition Project</a>
+            <a class="btn btn-lg btn-success" href=@Url.Action("Xcel", "Home")>Xcel Contact Center</a>
+            <a class="btn btn-lg btn-success" href=@Url.Action("Yemnak","Home")>Yemnak Concierge</a>
+
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h3 class="mont text-center" style="color:black">Yemnak</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
+            <video id="Aboutus_Video_PSC" class="Aboutus_Video_PSC" controls="controls">
+                <source src="~/Content/Videos/yemnak.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <p class="mont yemnak_description">
+                Since 2003, the company has sought to achieve the highest level of well being for its customers by meeting all the needs of customers, whether individuals or companies, to facilitate their daily lives 24 hours a day. We also provide services to our customers through multi-level cards designed to meet all the needs of our customers. Community or Through the conclusion of contracts for private companies, institutions and government agencies, and has achieved this service throughout those years the objectives that have been established for it through our series of customers extended from individuals, companies and government agencies and ministries within the State of Kuwait and to learn more details of this service you can Access the link:
+                <a target="_blank" href="http://www.yemnak.com/">www.yemnak.com</a>
+            </p>
+        </div>
+
+    </div>
+</div>

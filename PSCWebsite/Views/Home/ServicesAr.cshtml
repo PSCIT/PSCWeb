@@ -1,0 +1,187 @@
+﻿
+@{
+    ViewBag.Title = "ServicesAr";
+    Layout = "~/Views/Shared/_LayoutAr.cshtml";
+}
+
+<style>
+    @@media only screen and (min-width : 320px) {
+        .slickclass {
+            display: none;
+        }
+
+        header {
+            background: none;
+            height: auto;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        .footerskew {
+            display: none;
+        }
+
+        footer {
+            margin: 0;
+        }
+
+            footer img {
+                padding-top: 30px;
+            }
+    }
+</style>
+
+<div style="position:absolute;left:130px;top:10px;z-index:999999999;">
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> | <a style="color:#555; font-family: 'Montserrat', sans-serif;" href=@Url.Action("Services","Home")>English</a> | <a class="mont" style="color:#555" href="#">العربي</a>
+</div>
+
+<div class="container">
+    <br />
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+
+            <a class="btn btn-lg btn-success mont" href="#">مشروع الضمان الصحى</a>
+            <a class="btn btn-lg btn-success mont" href=@Url.Action("ExpatsExamProjAr", "Home")>مشروع فحص العمالة الوافدة</a>
+            <a class="btn btn-lg btn-success mont" href=@Url.Action("XcelAr", "Home")>مركز إتصال إكسل</a>
+            <a class="btn btn-lg btn-success mont" href=@Url.Action("YemnakAr","Home")>يُمناك كونسيرج</a>
+
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h3 class="mont text-center" style="color:black">مشروع الضمان الصحى</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
+            <video id="Aboutus_Video_PSC" class="Aboutus_Video_PSC" controls="controls">
+                <source src="~/Content/Videos/HealthInsurance.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <p class="mont yemnak_description">
+            بدأ تشغيل المشروع في عام  2003  بالتعاون مع وزارة الصحة الكويتية حيث يقدم المشروع من خلال 16 مركز خدمة يضم 140 موظف يقومون على خدمة الوافدين بجميع محافظات الكويت، خدمة تسجيل المشتركين في الضمان و التأمين الصحي للوافدين و إصدار بطاقات الضمان و التأمين الصحي الخاص بهم ، و هو يعتبر أحد اكبر المشروعات الوطنية التي تنفذها شركة الخدمات العامة  بنظامBOT  ، حيث تعمل مراكز الخدمة لدينا بأحدث الأنظمة الإلكترونية و مجهزة بما يستوعب 9000 مراجع  يومياً لإنجاز معاملاتهم بآلية عمل منظمة و بيئة مريحة ، مراكز الخدمة لدينا كالتالي :
+        </p>
+    </div>
+</div>
+
+<br />
+<div class="row" style="direction:rtl">
+
+    <div class="col-xs-12 col-lg-4">
+        <div class="well mont">
+            <p>
+                <b>مركز هجرة الجهراء </b>
+                <br />
+                الخاص بمعاملات الخدم و أبناء الكويتية و الخليجية
+            </p>
+            <p>
+                <b>مركز محافظة الأحمدي</b>
+                <br />
+                الخاص بمعاملات الشؤون و الإلتحاق بعائل
+            </p>
+
+            <p>
+                <b>مركز هجرة الأحمدي</b>
+                <br />
+                الخاص بمعاملات الخدم و أبناء الكويتية و الخليجية
+            </p>
+
+            <p>
+                <b>مركز محافظة مبارك الكبير </b>
+                <br />
+                الخاص بمعاملات الخدم و أبناء الكويتية و الخليجية
+            </p>
+
+            <p>
+                <b>مركز هجرة الفروانية</b>
+                <br />
+                الخاص بمعاملات الخدم و أبناء الكويتية و الخليجية
+            </p>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-lg-4">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-12 col-lg-offset-0">
+                <div class="well mont">
+                    <p>
+                        <b>مركز محافظة حولي </b>
+                        <br />
+                        الخاص بمعاملات الشؤون و الإلتحاق بعائل
+                    </p>
+
+                    <p>
+                        <b>مركز محافظة العاصمة </b>
+                        <br />
+                        الخاص بمعاملات الشؤون و الإلتحاق بعائل
+                    </p>
+                    <p>
+                        <b>مركز هجرة العاصمة </b>
+                        <br />
+                        الخاص بمعاملات الخدم و أبناء الكويتية و الخليجية
+                    </p>
+
+                    <p>
+                        <b>مركز محافظة الفروانية </b>
+                        <br />
+                        الخاص بمعاملات الشؤون و الإلتحاق بعائل
+                    </p>
+
+                    <p>
+                        <b>مركز محافظة الجهراء</b>
+                        <br />
+                        الخاص بمعاملات الشؤون و الإلتحاق بعائل
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-lg-4">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-12 col-lg-offset-0">
+                <div class="well mont">
+                    <p>
+                        <b>مركز هجرة حولي </b>
+                        <br />
+                        الخاص بمعاملات الخدم و أبناء الكويتية و الخليجية
+                    </p>
+                    <p>
+                        <b>مركز منطقة الجابرية </b>
+                        <br />
+                        الخاص بمعاملات الشركات
+                    </p>
+                    <p>
+                        <b>مركز الضمان الحكومي </b>
+                        <br />
+                        الخاص بموظفين الدولة
+                    </p>
+                    <p>
+                        <b>مركز الصديق </b>
+                        <br />
+                        الخاص بأصحاب المشاريع الصغيرة
+                    </p>
+                    <p>
+                        <b>مركز الخدمات الخاصة لهجرة الفروانية</b>
+                        <br />
+                        الخاص بالدبلوماسيين و المعاملات الخاصة
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

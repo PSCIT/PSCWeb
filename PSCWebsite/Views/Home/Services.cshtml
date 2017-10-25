@@ -1,0 +1,187 @@
+﻿
+@{
+    ViewBag.Title = "Services";
+}
+
+<style>
+    @@media only screen and (min-width : 320px) {
+        .slickclass {
+            display: none;
+        }
+
+        header {
+            background: none;
+            height: auto;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        .footerskew {
+            display: none;
+        }
+
+        footer {
+            margin: 0;
+        }
+
+            footer img {
+                padding-top: 30px;
+            }
+    }
+</style>
+
+<div style="position:absolute;right:120px;top:10px;z-index:999999999;">
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> | <a class="mont" style="color:#444" href="">English</a> | <a style="font-family: 'Droid Arabic Kufi', sans-serif;color:#444" href=@Url.Action("ServicesAr", "Home")>العربي</a>
+</div>
+
+<div class="container">
+    <br />
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+
+            <a class="btn btn-lg btn-success" href=@Url.Action("Services", "Home")>Health Insurance Project</a>
+            <a class="btn btn-lg btn-success" href=@Url.Action("ExpatsExamProj", "Home")>Expats Examinition Project</a>
+            <a class="btn btn-lg btn-success" href=@Url.Action("Xcel", "Home")>Xcel Contact Center</a>
+            <a class="btn btn-lg btn-success" href=@Url.Action("Yemnak","Home")>Yemnak Concierge</a>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h3 class="mont text-center" style="color:black">Health Insurance Project</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
+            <video id="Aboutus_Video_PSC" class="Aboutus_Video_PSC" controls="controls">
+                <source src="~/Content/Videos/HealthInsurance.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <p class="mont yemnak_description">
+                The service center includes 140 employees who serve the expatriates in all governorates of Kuwait, the registration service of the participants in the insurance and health insurance for expatriates and the issuance of their insurance and health insurance, and is one of the largest national projects implemented by the General Services Company BOT, We have the latest electronic systems and equipped with 9000 references per day to complete their transactions with an organized mechanism and a comfortable environment, our service centers are as follows:
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-12 col-lg-8">
+            <h2 class="mont text-center text-warning">Health Insurance Centers</h2>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="well mont">
+                        <h4>Timings:</h4>
+                        <h5>
+                            7:30 AM To 1:30 PM
+                            <br />
+                            4:00 PM To 7:30 PM
+                        </h5>
+                        <hr />
+                        <p>
+                            <b>VIP CORPORATES SERVICES</b>
+                            <br />
+                            Hawally, behind Mubarak Hospital
+                        </p>
+                        <p>
+                            <b>FARWANIYA</b>
+                            <br />
+                            Farwaniyah- beside Khaitan clinic
+                        </p>
+
+                        <p>
+                            <b>HAWALLY</b>
+                            <br />
+                            Hawally- behind Mubark Hospital
+                        </p>
+
+                        <p>
+                            <b>AL AHMADI</b>
+                            <br />
+                            Al Fahaheel- beside old Clinic
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="well mont">
+                        <h4>Timings:</h4>
+                        <h5>
+                            7:30 AM To 1:30 PM
+                        </h5>
+                        <hr />
+                        <p>
+                            <b>KUWAIT CITY</b>
+                            <br />
+                            Health Al Sabah Area
+                        </p>
+
+                        <p>
+                            <b>JAHRA</b>
+                            <br />
+                            Health Al Sabah Area
+                        </p>
+                        <p>
+                            <b>GOVERNMENTAL</b>
+                            <br />
+                            Health Al Sabah Area
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-lg-4">
+            <div class="row">
+                <h2 class="mont text-center text-warning">Immigration Centers</h2>
+                <div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-12 col-lg-offset-0">
+                    <div class="well mont">
+                        <h4>Timings:</h4>
+                        <h5>
+                            7:30 AM To 1:30 PM
+                        </h5>
+                        <hr />
+                        <p>
+                            <b>FARWANIYA</b>
+                            <br />
+                            Farwaniyah Immigration and Passports building
+                        </p>
+                        <p>
+                            <b>HAWALLY</b>
+                            <br />
+                            Hawally Immigration and Passports building
+                        </p>
+                        <p>
+                            <b>AL AHMADI</b>
+                            <br />
+                            Al Ahmadi Immigration and Passports building
+                        </p>
+                        <p>
+                            <b>Al JAHRA</b>
+                            <br />
+                            Al Jahra Immigration and Passports building
+                        </p>
+                        <p>
+                            <b>KUWAIT CITY</b>
+                            <br />
+                            Kuwait City Immigration and Passports building
+                        </p>
+                        <p>
+                            <b>Mubarak Al Kabeer</b>
+                            <br />
+                            Mubarak Al Kabeer Immigration and Passports building
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

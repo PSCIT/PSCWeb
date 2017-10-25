@@ -1,0 +1,207 @@
+﻿
+@{
+    ViewBag.Title = "Official Website";
+}
+
+<div style="position:absolute;right:120px;top:10px;z-index:999999999;" >
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> | <a class="mont" style="color:#555" href="">English</a> | <a style="font-family: 'Droid Arabic Kufi', sans-serif;color:#555" href=@Url.Action("IndexAr","Home")>العربي</a>
+</div>
+
+<video autoplay loop muted poster="~/Content/Images/DSC_1542.jpg" id="background">
+    <source src="~/Content/Videos/Kuwait.mp4" type="video/mp4" />
+</video>
+
+
+
+<section class="about">
+    <div class="container">
+        <div class="row">
+            @*<div class="clearfix">
+                <div class="col-lg-6 col-lg-push-6">
+                    <img class="img-responsive" src="~/Content/Images/services.svg" alt="" />
+                </div>
+
+                <div class="col-lg-6 col-lg-pull-6">
+                    <h1 class="mont">
+                        Range of Services Adapted to Your Needs
+                    </h1>
+                    <h3 class="mont">
+                        The Public Services Company was founded in 1996 as a Kuwait Closed Shareholding Company owned mostly by government institutions with a paid-up capital of KD 3,000,000.
+                        In June 2003, PSC’s organization structure was changed as the Kuwait Finance House (with 80% share) and Al-Awqaf Foundation (with 20% share) joined together to run its business operations.
+                    </h3>
+                    <a href="#" class="btn btn-lg btn-block btn-flat mont">Read More</a>
+                </div>
+            </div>*@
+
+            <div class="col-lg-10 col-lg-offset-1">
+                <h1 class="mont">
+                    Range of Services Adapted to Your Needs
+                </h1>
+                <h3 class="mont">
+                    The Public Services Company was founded in 1996 as a Kuwait Closed Shareholding Company owned mostly by government institutions with a paid-up capital of KD 3,000,000.
+                    In June 2003, PSC’s organization structure was changed as the Kuwait Finance House (with 80% share) and Al-Awqaf Foundation (with 20% share) joined together to run its business operations.
+                    <a href=@Url.Action("AboutUs","Home") class="btn btn-xs btn-flat mont">Read More</a>
+                </h3>
+                
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="mont text-center heading">Our Services</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <div class="row card">
+                    <div class="col-xs-12 col-lg-3">
+                        <img class="img-responsive" src="~/Content/Images/HealthProject.png" alt="" />
+                    </div>
+                    <div class="col-xs-12 col-lg-9 mont">
+                        <h2>Health & Insurance Project</h2>
+                        <p>
+                            It is one of the major national projects carried out by Public Services Company based on BOT System.
+                            In this respect, the Company provide subscriber registration service in the Health Guarantee & Insurance Scheme for all expatriates
+                            and it issue the relevant cards via 13 service centers all over the governorates of Kuwait.
+                            <a href=@Url.Action("Services", "Home")>Read More...</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="row card">
+                    <div class="col-xs-12 col-lg-3">
+                        <img class="img-responsive" src="~/Content/Images/ExpatexamProj.png" alt="" />
+                    </div>
+                    <div class="col-xs-12 col-lg-9 mont">
+                        <h2>Expatriate Examination Project</h2>
+                        <p>
+                            Public Services Company is proud of their actual contribution in the completion of preventives health system in the country
+                            in collaboration with Ministry of Health via expatriate labour force examination project before entry to Kuwait via our
+                            centers that are located worldwide.
+                            <a href=@Url.Action("ExpatsExamProj", "Home")>Read More...</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <div class="row card">
+                    <div class="col-xs-12 col-lg-3">
+                        <img class="img-responsive" src="~/Content/Images/Xcel.png" alt="" />
+                    </div>
+                    <div class="col-xs-12 col-lg-9 mont">
+                        <h2>Telecommunication Center</h2>
+                        <p>
+                            The units of Public Service Company include XCEL telecommunication center with accommodation capacity up to 100 employees equipped
+                            with up to date specialist systems and devices in the field of telecommunication (AVAYA System), customer relationship management
+                            system (Microsoft CRM) and call recording system (Call Parrot).
+                            <a href=@Url.Action("Xcel", "Home")>Read More...</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="row card">
+                    <div class="col-xs-12 col-lg-3">
+                        <img class="img-responsive" src="~/Content/Images/YemnakProj.png" alt="" />
+                    </div>
+                    <div class="col-xs-12 col-lg-9 mont">
+                        <h2>Yemnak Project Concierge</h2>
+                        <p>
+                            The project of dreams that takes you far away via our services To the world of prosperity and entertainment.
+                            With our Company dreams come true and life becomes more beautiful and easier. Here we are working incited with
+                            dedicated kuwaiti spirit of support to achieve our service logo "Give us priority, may god save you".
+                            <a href=@Url.Action("Yemnak","Home")>Read More...</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="newsskew"></div>
+
+<section class="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="mont text-center heading">News & Events</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="slickclass2">
+                
+                <div class="col-lg-4 text-center">
+                    <figure class="snip1527">
+                        <div class="image"><img src="~/Content/Images/KWG2.jpg" alt="pr-sample24" /></div>
+                        <figcaption>
+                            <div class="date"><span class="day">16</span><span class="month">Apr</span></div>
+                            <h3>Employees Honoring 2015</h3>
+                            <p>
+                                Public Services Company honored its employees for 2015 At its headquarters in Kuwait.
+                            </p>
+                        </figcaption>
+                        <a href=@Url.Action("Media3","Home")></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <figure class="snip1527">
+                        <div class="image">
+                            <img src="~/Content/Images/KWG3.jpg" alt="pr-sample25" />
+                        </div>
+                        <figcaption>
+                            <div class="date"><span class="day">21</span><span class="month">May</span></div>
+                            <h3>ceremony of the Kuwaiti Cultural Office in Cairo</h3>
+                            <p>
+                                Public Services Company, sponsored the ceremony held by the Kuwaiti Cultural Office in Cairo for the 2017/2016 Kuwaiti students.
+                            </p>
+                        </figcaption>
+                        <a href=@Url.Action("Media2","Home")></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <figure class="snip1527">
+                        <div class="image"><img src="~/Content/Images/KWG1.jpg" alt="pr-sample23" /></div>
+                        <figcaption>
+                            <div class="date"><span class="day">20</span><span class="month">June</span></div>
+                            <h3>Positive expectations surround the operations</h3>
+                            <p>
+                                Salam Holding Group held its Ramadan gathering in the presence of the officials of the subsidiaries and their employees at the Mayadeen Al-Ramayeh Complex
+                            </p>
+                        </figcaption>
+                        <a href=@Url.Action("Media","Home")></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <figure class="snip1527">
+                        <div class="image"><img src="~/Content/Images/KWG4.jpg" alt="pr-sample23" /></div>
+                        <figcaption>
+                            <div class="date"><span class="day">13</span><span class="month">Apr</span></div>
+                            <h3>Invitation for regular and group lunch</h3>
+                            <p>
+                                The Public Services Company has invited to the regular meeting and collective lunch at the compound of fields of shooting
+                            </p>
+                        </figcaption>
+                        <a href=@Url.Action("Media4","Home")></a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "XcelAr";
+    Layout = "~/Views/Shared/_LayoutAr.cshtml";
+}
+
+<style>
+    @@media only screen and (min-width : 320px) {
+        .slickclass {
+            display: none;
+        }
+
+        header {
+            background: none;
+            height: auto;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        .footerskew {
+            display: none;
+        }
+
+        footer {
+            margin: 0;
+        }
+
+            footer img {
+                padding-top: 30px;
+            }
+    }
+</style>
+
+<div style="position:absolute;left:130px;top:10px;z-index:999999999;">
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> |  <a style="color:#555; font-family: 'Montserrat', sans-serif;" href=@Url.Action("Xcel","Home")>English</a> | <a class="mont" style="color:#555" href="#">العربي</a>
+</div>
+
+<div class="container">
+    <br />
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+
+            <a class="btn btn-lg btn-success mont" href=@Url.Action("ServicesAr", "Home")>مشروع الضمان الصحى</a>
+            <a class="btn btn-lg btn-success mont" href=@Url.Action("ExpatsExamProjAr", "Home")>مشروع فحص العمالة الوافدة</a>
+            <a class="btn btn-lg btn-success mont" href="#">مركز إتصال إكسل</a>
+            <a class="btn btn-lg btn-success mont" href=@Url.Action("YemnakAr","Home")>يُمناك كونسيرج</a>
+
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h3 class="mont text-center" style="color:black">مركز إتصال إكسل</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
+            <video id="Aboutus_Video_PSC" class="Aboutus_Video_PSC" controls="controls">
+                <source src="~/Content/Videos/xcel.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <p class="mont yemnak_description">
+                تضم شركة الخدمات العامة مركز الإتصال اكسل الذي تم تأسيسه في عام 2008 والذي يقوم بتشغيل عدة مراكز اتصال لعدة جهات في القطاع العام و الخاص بطاقم عمل يصل إلى 100 موظف مع تطبيق معايير الأداء العالمية KBI  و الذي يعمل بأحدث الأنظمة و الأجهزة المتخصصة في مجال الإتصال (AVAYA SYSTEM ) و نظام إدارة علاقات العملاء CRM)) و نظم تسجيل المكالمات CALL PILOT)) مع إمكانية إستقبال المكالمات المحولة من CISCO  و من الخدمات التي يقدمها مركز الإتصال : 
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-lg-offset-3">
+            <ul class="list-group mont">
+                <li class="list-group-item">خدمة المكالمات الواردة و الصادرة</li>
+                <li class="list-group-item">الحملات التسويقية</li>
+                <li class="list-group-item">حملات استطلاع الرأي</li>
+                <li class="list-group-item">حملات إرشادية و تعريفية</li>
+                <li class="list-group-item">خدمة الرسائل النصية</li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <ul class="list-group mont">
+                <li class="list-group-item">خدمة البريد الإلكتروني</li>
+                <li class="list-group-item">خدمة إدخال قوعد البيانات</li>
+                <li class="list-group-item">خدمة الدعم الفني</li>
+                <li class="list-group-item">خدمة الإستشارات و التدريب</li>
+                <li class="list-group-item">التحصيل و المتابعة الهاتفية</li>
+                <li class="list-group-item">الخدمات الإعلانية</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
