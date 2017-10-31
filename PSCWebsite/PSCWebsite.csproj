@@ -121,6 +121,9 @@
     <Content Include="Content\Images\Flag_Egypt.svg" />
     <Content Include="Content\Images\Flag_India.svg" />
     <Content Include="Content\Images\Flag_Jordan.svg" />
+    <Content Include="Content\Images\Flag_of_Kuwait.svg" />
+    <Content Include="Content\Images\Flag_of_the_United_Arab_Emirates.svg" />
+    <Content Include="Content\Images\Flag_of_the_United_Kingdom.svg" />
     <Content Include="Content\Images\foooter psc svg green\PSCLogo-grey.svg" />
     <Content Include="Content\Images\HealthProject.png" />
     <Content Include="Content\Images\KWG1.jpg" />

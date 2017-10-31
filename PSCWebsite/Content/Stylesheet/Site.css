@@ -18,6 +18,14 @@ body {
 /* [(320X480) (320X533) (320X568)] [Custom, iPhone Retina, iPhone3-4-5, Microsoft Lumia, HTC 8X, Samsung Galaxy S-S2-S3Mini]*/
 @media only screen and (min-width : 320px) {
 
+    .SocialMedia{
+        padding-top:100px;
+    }
+
+    .footerabout{
+        padding-top:25px;
+    }
+
     /*#region Page : Home/Index */
 
     /*#region Off-Canvas */
@@ -568,7 +576,7 @@ body {
         }
 
         footer .row:first-child div:nth-child(2n+2), footer .row:first-child div:nth-child(2n+3) {
-            padding-left: 32px;
+            padding-left: 0;
         }
 
         footer ul {
