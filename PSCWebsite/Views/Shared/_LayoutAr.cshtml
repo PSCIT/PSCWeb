@@ -56,7 +56,7 @@
         <label class="hidden-lg hidden-md" for="togglebox" id="navtoggler"> <i class="fa fa-bars" aria-hidden="true" for="togglebox" id="navtoggler"></i></label>
 
         <div class="container-fluid">
-            <div class="row" style="background-color:#fff">
+            <div class="row" style="background-color:#d1d1d1">
                 <div class="col-lg-4 col-lg-offset-5">
                     <img style="display:inline;width:8%;padding: 10px 0" src="~/Content/Images/Flag_Egypt.svg" />
                     <a target="_blank" href="http://www.khadamat.in/"><img style="display:inline;width:9%;padding: 10px 0" src="~/Content/Images/Flag_India.svg" /></a>
@@ -85,7 +85,7 @@
 
                                 </ul>
                             </li>
-                            <li><a class="mont" href=@Url.Action("CareersAr", "Home")>الوظائف الشاغرة</a></li>
+                            <li><a class="mont" href=@Url.Action("ClientsAr", "Home")>عملائنا</a></li>
 
                             <li class="dropdown mont">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">مشاريعنا <span class="caret"></span></a>
@@ -104,8 +104,10 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">نبذة تعريفية عنا<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href=@Url.Action("AboutUsAr", "Home")>نظرة عامة عن الشركة</a></li>
-                                    <li><a href="@Url.Action("AboutUsAr","Home")#ceomsg">رسالة رئيس مجلس الإدارة</a></li>
-                                    <li><a href="@Url.Action("AboutUsAr","Home")#OurMission">الرسالة والرؤية</a></li>
+                                    <li><a href="@Url.Action("MsgCEOAr","Home")">رسالة رئيس مجلس الإدارة</a></li>
+                                    <li><a href="@Url.Action("MissionVisionAr","Home")">الرسالة والرؤية</a></li>
+                                    <li><a href="@Url.Action("AboutUsAr","Home")#CompanyActivities">أنشطة الشركة</a></li>
+
                                     @*<li><a href="@Url.Action("AboutUsAr","Home")#co">الهيكل التنظيمى للشركة</a></li>*@
                                 </ul>
                             </li>

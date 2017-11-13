@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "MissionVisionAr";
+    Layout = "~/Views/Shared/_LayoutAr.cshtml";
+}
+
+<style>
+    @@media only screen and (min-width : 320px) {
+        .slickclass {
+            display: none;
+        }
+
+        header {
+            background: none;
+            height: auto;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        .footerskew {
+            display: none;
+        }
+
+        footer {
+            margin: 0;
+        }
+
+            footer img {
+                padding-top: 30px;
+            }
+    }
+</style>
+
+<div style="position:absolute;right:120px;top:10px;z-index:999999999;">
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> | <a style="color:#555; font-family: 'Montserrat', sans-serif;" href=@Url.Action("MissionVision","Home")>English</a> | <a class="mont" style="color:#555" href="#">العربي</a>
+</div>
+
+<hr />
+
+<div id="OurMission" class="AboutUs_OurMission">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+
+            <h1 class="text-center">
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+            </h1>
+            <h3 class="mont text-center">مهمتنا</h3>
+            <p class="mont text-right">
+                تسعى الشركة لترجمة الرغبة الأميرية في شأن إنشاء شركة الخدمات العامة و تذليل كل إمكانياتها لدعم القطاع العام و الخاص في دولة الكويت من وزارات و الهيئات و المؤسسات على أعلى مستوى من الجودة و النزاهة
+            </p>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+
+            <h1 class="text-center">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </h1>
+            <h3 class="mont text-center">رؤيتنا</h3>
+            <p class="mont text-right">
+                شركة رائدة دولياً في تقديم أفضل حلول الخدمات بطريقة مبتكرة و ذات جودة عالية لخدمة أهداف العمل في كل من القطاع العام و الخاص
+            </p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+
+            <h1 class="text-center">
+                <i class="fa fa-bullseye" aria-hidden="true"></i>
+            </h1>
+            <h3 class="mont text-center">أهدافنا</h3>
+            <h2 class="mont text-right">
+                <ul dir="rtl" class="mont">
+                    <li>خلق نموذج جديد و فريد في قطاع الخدمات ذو قيمة مضافة للقطاعين العام و الخاص.</li>
+                    <li>تطوير حجم أعمال الشركة و خدماتها محليا و دوليا .</li>
+                    <li>استغلال كل الفرص المتاحة من خلال ابرام عقود تقديم خدمات مع الحكومات و الشركات الكبرى .</li>
+                    <li>تعظيم ايرادات الشركة من خلال تنويع مصادر الدخل و الدخول في قطاعات جديدة .</li>
+                </ul>
+            </h2>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+
+            <h1 class="text-center">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+            </h1>
+            <h3 class="mont text-center">قيمنا </h3>
+            <h2 class="mont text-right">
+                <ul dir="rtl" class="mont">
+                    <li>التعاون و هو أسلوب العمل المعتمد لدينا لتحقيق جميع اهدافنا المشتركة مع عملائنا .</li>
+                    <li>السرية مبدأ أساسي نهتم به في جميع سياسات اجراءات العمل المتبعة لدينا و هو ما يعكس ثقة عملائنا بنا من خلال مشاريعنا.</li>
+                    <li>الجودة و هي ما نركز عليها دائما لضمان راحة عملائنا و رضاهم .</li>
+                    <li>النزاهة حيث تلتزم الشركة بالنزاهة و الاخلاقيات العالية في جميع تعاملاتها مع عملائها .</li>
+                </ul>
+            </h2>
+
+        </div>
+    </div>
+</div>

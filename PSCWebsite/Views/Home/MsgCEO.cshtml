@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "MsgCEO";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    @@media only screen and (min-width : 320px) {
+        .slickclass {
+            display: none;
+        }
+
+        header {
+            background: none;
+            height: auto;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        .footerskew {
+            display: none;
+        }
+
+        footer {
+            margin: 0;
+        }
+
+            footer img {
+                padding-top: 30px;
+            }
+    }
+</style>
+
+<div style="position:absolute;right:120px;top:10px;z-index:999999999;">
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> | <a class="mont" style="color:#444" href="">English</a> | <a style="font-family: 'Droid Arabic Kufi', sans-serif;color:#444" href=@Url.Action("MsgCEOAr", "Home")>العربي</a>
+</div>
+
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3 class="mont text-center" style="color:black;border: 4px double darkgray; padding: 10px;">CEO Message</h3>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <img class="img-responsive" style="border:1px solid black" src="~/Content/Images/mdpic.jpg" alt="" />
+        </div>
+        <div class="col-lg-9">
+            <h4 class="mont text-justify" style="line-height:35px;">
+                PSC is currently undergoing a very important phase as we move towards achieving our vision to be the leading service provider with key products and services in the Middle East and emerging markets and looking forward to be the regional player and leading ID card provider in the Arab world.
+
+                Looking back with pride, PSC has grown in record time from 20 to 150 highly professional and competent employees. We have managed successfully a national project with the Ministry of Health and we hope to reap more success in the future.
+
+                A strong BOT service provider, full capacity for executing and managing large scale projects as well as the flexibility, PSC has the entrepreneurial attitude and skills of its staff are to leave no stone unturned as we take on more promising projects. We are also on our ways to boost the company’s capital from KD 2,000,000 to KD 3,000,000 and increase the company’s assets to better serve our valued clientele.
+
+
+                Capitalizing on our core competencies of efficient technologies and highly skilled staff, PSC aims at streamlining operations, improving the effectiveness of business processes and showing measurable return-on-investment as well as optimizing the value of customer relationships through cost-effective and world-class processes and improved customer satisfaction.
+
+                Our view is to continuously provide our valued clientele with the best services as we keep pace in this dynamic local, regional, and global market.
+
+                Thank you for taking time to visit our website.
+                Mr. Ali AL Shamali
+            </h4>
+        </div>
+    </div>
+</div>

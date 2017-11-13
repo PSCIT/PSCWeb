@@ -109,8 +109,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\altijari.png" />
     <Content Include="Content\Images\BOD_Ar.jpg" />
     <Content Include="Content\Images\BOD_En.jpg" />
+    <Content Include="Content\Images\CMGS.png" />
     <Content Include="Content\Images\CO_AR.jpg" />
     <Content Include="Content\Images\CO_EN.jpg" />
     <Content Include="Content\Images\DSC_1534.JPG" />
@@ -126,11 +128,15 @@
     <Content Include="Content\Images\Flag_of_the_United_Kingdom.svg" />
     <Content Include="Content\Images\foooter psc svg green\PSCLogo-grey.svg" />
     <Content Include="Content\Images\HealthProject.png" />
+    <Content Include="Content\Images\KFH_logo.png" />
     <Content Include="Content\Images\KWG1.jpg" />
     <Content Include="Content\Images\KWG2.jpg" />
     <Content Include="Content\Images\KWG3.jpg" />
     <Content Include="Content\Images\KWG4.jpg" />
+    <Content Include="Content\Images\LegalLogo.png" />
     <Content Include="Content\Images\mdpic.jpg" />
+    <Content Include="Content\Images\MOH_Logo.png" />
+    <Content Include="Content\Images\MOJ.png" />
     <Content Include="Content\Images\newsbg.jpg" />
     <Content Include="Content\Images\News_Events\1.jpg" />
     <Content Include="Content\Images\News_Events\10.jpg" />
@@ -194,6 +200,8 @@
     <Content Include="Content\Images\PSCLogowithouttext.svg" />
     <Content Include="Content\Images\Services.png" />
     <Content Include="Content\Images\services.svg" />
+    <Content Include="Content\Images\Viva.png" />
+    <Content Include="Content\Images\Warba_bank.png" />
     <Content Include="Content\Images\Xcel.png" />
     <Content Include="Content\Images\Yemnak.jpg" />
     <Content Include="Content\Images\YemnakProj.png" />
@@ -260,7 +268,7 @@
     <Content Include="Views\Home\Xcel.cshtml" />
     <Content Include="Views\Home\ExpatsExamProj.cshtml" />
     <Content Include="Views\Home\Contactus.cshtml" />
-    <Content Include="Views\Home\Careers.cshtml" />
+    <Content Include="Views\Home\Clients.cshtml" />
     <Content Include="Views\Shared\_LayoutAr.cshtml" />
     <Content Include="Views\Home\IndexAr.cshtml" />
     <Content Include="Views\Home\AboutUsAr.cshtml" />
@@ -268,7 +276,7 @@
     <Content Include="Views\Home\YemnakAr.cshtml" />
     <Content Include="Views\Home\XcelAr.cshtml" />
     <Content Include="Views\Home\ExpatsExamProjAr.cshtml" />
-    <Content Include="Views\Home\CareersAr.cshtml" />
+    <Content Include="Views\Home\ClientsAr.cshtml" />
     <Content Include="Views\Home\ContactusAr.cshtml" />
     <Content Include="Views\Home\Media.cshtml" />
     <Content Include="Views\Home\MediaAr.cshtml" />
@@ -280,6 +288,10 @@
     <Content Include="Views\Home\MediaAllAr.cshtml" />
     <Content Include="Views\Home\Media4.cshtml" />
     <Content Include="Views\Home\Media4ar.cshtml" />
+    <Content Include="Views\Home\MsgCEO.cshtml" />
+    <Content Include="Views\Home\MsgCEOAr.cshtml" />
+    <Content Include="Views\Home\MissionVision.cshtml" />
+    <Content Include="Views\Home\MissionVisionAr.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
