@@ -29,6 +29,26 @@ namespace PSCWebsite.Controllers
             return View();
         }
 
+        public ActionResult MsgCEO()
+        {
+            return View();
+        }
+
+        public ActionResult MsgCEOAr()
+        {
+            return View();
+        }
+
+        public ActionResult MissionVision()
+        {
+            return View();
+        }
+
+        public ActionResult MissionVisionAr()
+        {
+            return View();
+        }
+
         public ActionResult Services()
         {
             return View();
@@ -79,12 +99,12 @@ namespace PSCWebsite.Controllers
             return View();
         }
 
-        public ActionResult Careers()
+        public ActionResult Clients()
         {
             return View();
         }
 
-        public ActionResult CareersAr()
+        public ActionResult ClientsAr()
         {
             return View();
         }

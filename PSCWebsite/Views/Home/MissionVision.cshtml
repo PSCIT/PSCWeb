@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "BoardofDirector";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    @@media only screen and (min-width : 320px) {
+        .slickclass {
+            display: none;
+        }
+
+        header {
+            background: none;
+            height: auto;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        .footerskew {
+            display: none;
+        }
+
+        footer {
+            margin: 0;
+        }
+
+            footer img {
+                padding-top: 30px;
+            }
+    }
+</style>
+
+<div style="position:absolute;right:120px;top:10px;z-index:999999999;">
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> | <a class="mont" style="color:#444" href="">English</a> | <a style="font-family: 'Droid Arabic Kufi', sans-serif;color:#444" href=@Url.Action("MissionVisionAr", "Home")>العربي</a>
+</div>
+
+<hr />
+
+<div id="OurMission" class="AboutUs_OurMission">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+
+            <h1 class="text-center">
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+            </h1>
+            <h3 class="mont text-center">Our Mission</h3>
+            <p class="mont">
+                The company seeks to translate the desire of the Amir to establish a public services company and to maximize all its capabilities to support the public and private sector in Kuwait from ministries, bodies and institutions at the highest level of quality and integrity.
+            </p>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+
+            <h1 class="text-center">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </h1>
+            <h3 class="mont text-center">Our Vision</h3>
+            <p class="mont">
+                Public Service Company as an internationally recognized leader in providing the best service solutions in an innovative and high quality manner, to serve business objectives both in the public and private sectors.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12">
+
+            <h1 class="text-center">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+            </h1>
+            <h3 class="mont text-center">Our Values</h3>
+            <h4 class="mont text-justify" style="direction:ltr; line-height:35px;">
+                <ul class="mont">
+                    <li>Co-operation is our adopted method of work to achieve all our common goals with our customers.</li>
+                    <li>Confidentiality is a fundamental principle that we take care of in all our business policies, which reflects the confidence of our customers through our projects.</li>
+                    <li>Quality is what we always focus on to ensure the comfort and satisfaction of our customers.</li>
+                    <li>Integrity where the company is committed to integrity and high ethics in all dealings with its customers.</li>
+                </ul>
+            </h4>
+        </div>
+    </div>
+</div>

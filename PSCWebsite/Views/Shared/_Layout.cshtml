@@ -46,7 +46,7 @@
     <div id="contentarea">
         <label class="hidden-lg hidden-md" for="togglebox" id="navtoggler"> <i class="fa fa-bars" aria-hidden="true" for="togglebox" id="navtoggler"></i></label>
         <div class="container-fluid">
-            <div class="row" style="background-color:#fff">
+            <div class="row" style="background-color:#d1d1d1">
                 <div class="col-lg-4 col-lg-offset-5">
                     <a href="#"><img style="display:inline;width:8%;padding: 10px 0" src="~/Content/Images/Flag_Egypt.svg" /></a>
                     <a target="_blank" href="http://www.khadamat.in/"><img style="display:inline;width:9%;padding: 10px 0" src="~/Content/Images/Flag_India.svg" /></a>
@@ -83,9 +83,9 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href=@Url.Action("AboutUs", "Home")>Company Overview</a></li>
-                                    <li><a href="@Url.Action("AboutUs","Home")#ceomsg">Message from Chairman</a></li>
-                                    <li><a href="@Url.Action("AboutUs","Home")#OurMission">Mission & Vision</a></li>
-                                    @*<li><a href="@Url.Action("AboutUs","Home")#co">Organizational Structure</a></li>*@
+                                    <li><a href="@Url.Action("MsgCEO","Home")">Message from Chairman</a></li>
+                                    <li><a href="@Url.Action("MissionVision","Home")">Mission & Vision</a></li>
+                                    <li><a href="@Url.Action("AboutUs","Home")#CompanyActivities">Companies Activities</a></li>
                                 </ul>
                             </li>
 
@@ -99,7 +99,7 @@
                                     <li><a href=@Url.Action("Yemnak","Home")>Yemnak Concierge</a></li>
                                 </ul>
                             </li>
-                            <li><a class="mont" href=@Url.Action("Careers", "Home")>Careers</a></li>
+                            <li><a class="mont" href=@Url.Action("Clients", "Home")>Our Clients</a></li>
                             @*<li><a class="mont" href=@Url.Action("MediaAll", "Home")>Media Center</a></li>*@
                             <li class="dropdown mont">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media Center<span class="caret"></span></a>

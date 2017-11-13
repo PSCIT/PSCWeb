@@ -269,7 +269,7 @@
     <Content Include="Views\Home\Xcel.cshtml" />
     <Content Include="Views\Home\ExpatsExamProj.cshtml" />
     <Content Include="Views\Home\Contactus.cshtml" />
-    <Content Include="Views\Home\Careers.cshtml" />
+    <Content Include="Views\Home\Clients.cshtml" />
     <Content Include="Views\Shared\_LayoutAr.cshtml" />
     <Content Include="Views\Home\IndexAr.cshtml" />
     <Content Include="Views\Home\AboutUsAr.cshtml" />
@@ -277,7 +277,7 @@
     <Content Include="Views\Home\YemnakAr.cshtml" />
     <Content Include="Views\Home\XcelAr.cshtml" />
     <Content Include="Views\Home\ExpatsExamProjAr.cshtml" />
-    <Content Include="Views\Home\CareersAr.cshtml" />
+    <Content Include="Views\Home\ClientsAr.cshtml" />
     <Content Include="Views\Home\ContactusAr.cshtml" />
     <Content Include="Views\Home\Media.cshtml" />
     <Content Include="Views\Home\MediaAr.cshtml" />
@@ -289,6 +289,10 @@
     <Content Include="Views\Home\MediaAllAr.cshtml" />
     <Content Include="Views\Home\Media4.cshtml" />
     <Content Include="Views\Home\Media4ar.cshtml" />
+    <Content Include="Views\Home\MsgCEO.cshtml" />
+    <Content Include="Views\Home\MsgCEOAr.cshtml" />
+    <Content Include="Views\Home\MissionVision.cshtml" />
+    <Content Include="Views\Home\MissionVisionAr.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
