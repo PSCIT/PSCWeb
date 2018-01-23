@@ -45,9 +45,9 @@
             <li><a href=@Url.Action("AboutUs","Home")><span class="ion-ios-people"></span> About Us</a></li>*@
 
             <li><a class="mont" href=@Url.Action("AboutUsAr","Home")><span class="ion-ios-people"></span>نبذة تعريفية عنا</a></li>
-            <li><a class="mont" href=@Url.Action("ServicesAr", "Home")><span class="ion-ios-cog"></span> خدماتنا</a></li>
+            <li><a class="mont" href=@Url.Action("ServicesAr", "Home")><span class="ion-ios-cog"></span> مشاريعنا</a></li>
             <li><a class="mont" href=@Url.Action("CareersAr", "Home")><span class="ion-android-locate"></span> الوظائف الشاغرة</a></li>
-            <li><a class="mont" href=@Url.Action("MediaAllAr", "Home")><span class="ion-ios-film"></span> الوسائط</a></li>
+            <li><a class="mont" href=@Url.Action("MediaAllAr", "Home")><span class="ion-ios-film"></span> المركز الإعلامى</a></li>
             <li><a class="mont" href=@Url.Action("ContactusAr", "Home")><span class="ion-iphone"></span> إتصل بنا</a></li>
 
         </ul>
@@ -60,12 +60,19 @@
                     <div class="hidden-xs hidden-sm col-md-12 col-lg-7">
                         <ul>
                             <li><a class="mont" href=@Url.Action("ContactusAr", "Home")>إتصل بنا</a></li>
-                            <li><a class="mont" href=@Url.Action("MediaAllAr", "Home")>الوسائط</a></li>
-                            <li><a class="mont" href=@Url.Action("CareersAr", "Home")>الوظائف الشاغرة</a></li>
-
-
+                            @*<li><a class="mont" href=@Url.Action("MediaAllAr", "Home")>المركز الإعلامى</a></li>*@
                             <li class="dropdown mont">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">خدماتنا <span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">المركز الإعلامى<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href=@Url.Action("MediaAllAr", "Home")>الأخبار</a></li>
+                                    <li><a href=@Url.Action("MediaAllAr", "Home")>معرض الصور</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a class="mont" href=@Url.Action("CareersAr", "Home")>الوظائف الشاغرة</a></li>
+                            
+                            <li class="dropdown mont">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">مشاريعنا <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href=@Url.Action("ServicesAr", "Home")>مشروع الضمان الصحى</a></li>
                                     <li><a href=@Url.Action("ExpatsExamProjAr", "Home")>مشروع فحص العمالة الوافدة</a></li>
@@ -166,7 +173,7 @@
                             <li><a href="AboutUsAr#co">الهيكل التنظيمى للشركة</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4 mont">
+                    @*<div class="col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4 mont">
                         <h1>خدماتنا</h1>
                         <ul>
                             <li><a href=@Url.Action("ServicesAr", "Home")>مشروع الضمان الصحى</a></li>
@@ -175,7 +182,7 @@
                             <li><a href=@Url.Action("YemnakAr","Home")>يُمناك كونسيرج</a></li>
 
                         </ul>
-                    </div>
+                    </div>*@
                 </div>
 
                 <div class="row">
