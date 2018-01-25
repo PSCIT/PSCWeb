@@ -158,5 +158,35 @@ namespace PSCWebsite.Controllers
         {
             return View();
         }
+
+        public ActionResult BillingPaymentProjEn()
+        {
+            return View();
+        }
+
+        public ActionResult BillingPaymentProjAr()
+        {
+            return View();
+        }
+
+        public ActionResult EmpContractsRecEn()
+        {
+            return View();
+        }
+
+        public ActionResult EmpContractsRecAr()
+        {
+            return View();
+        }
+
+        public ActionResult ExpressServiceCenterEn()
+        {
+            return View();
+        }
+
+        public ActionResult ExpressServiceCenterAr()
+        {
+            return View();
+        }
     }
 }

@@ -293,6 +293,12 @@
     <Content Include="Views\Home\MsgCEOAr.cshtml" />
     <Content Include="Views\Home\MissionVision.cshtml" />
     <Content Include="Views\Home\MissionVisionAr.cshtml" />
+    <Content Include="Views\Home\BillingPaymentProjEn.cshtml" />
+    <Content Include="Views\Home\EmpContractsRecEn.cshtml" />
+    <Content Include="Views\Home\ExpressServiceCenterEn.cshtml" />
+    <Content Include="Views\Home\BillingPaymentProjAr.cshtml" />
+    <Content Include="Views\Home\EmpContractsRecAr.cshtml" />
+    <Content Include="Views\Home\ExpressServiceCenterAr.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
