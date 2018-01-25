@@ -42,6 +42,26 @@ $(document).ready(function () {
         ]
     });
 
+    $('.clientslick').slick({
+        dots: false,
+        infinite: true,
+        arrows: false,
+        autoplay: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }]
+    });
+
     var myCenter = new google.maps.LatLng(29.2730019, 48.0164527);
     function initialize() {
         var mapProp = {
