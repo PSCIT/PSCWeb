@@ -135,7 +135,9 @@
     <Content Include="Content\Images\KWG4.jpg" />
     <Content Include="Content\Images\LegalLogo.png" />
     <Content Include="Content\Images\mdpic.jpg" />
+    <Content Include="Content\Images\MOF_Logo.png" />
     <Content Include="Content\Images\MOH_Logo.png" />
+    <Content Include="Content\Images\MOI_Logo.png" />
     <Content Include="Content\Images\MOJ.png" />
     <Content Include="Content\Images\newsbg.jpg" />
     <Content Include="Content\Images\News_Events\1.jpg" />
@@ -195,6 +197,7 @@
     <Content Include="Content\Images\News_Events\lunch\8.JPG" />
     <Content Include="Content\Images\News_Events\lunch\9.JPG" />
     <Content Include="Content\Images\officeEnvironment.jpeg" />
+    <Content Include="Content\Images\PACI_Logo.png" />
     <Content Include="Content\Images\PSCLogo-grey.svg" />
     <Content Include="Content\Images\PSCLogo.svg" />
     <Content Include="Content\Images\PSCLogowithouttext.svg" />
