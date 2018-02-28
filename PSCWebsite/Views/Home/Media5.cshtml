@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Media5";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    @@media only screen and (min-width : 320px) {
+        .slickclass {
+            display: none;
+        }
+
+        header {
+            background: none;
+            height: auto;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        .footerskew {
+            display: none;
+        }
+
+        footer {
+            margin: 0;
+        }
+
+            footer img {
+                padding-top: 30px;
+            }
+    }
+</style>
+
+<div style="position:absolute;right:120px;top:10px;z-index:999999999;">
+    <a target="_blank" href="https://mail.psc.com.kw/owa" class="mont" style="color:#444">@@</a> | <a class="mont" style="color:#444" href="">English</a> | <a style="font-family: 'Droid Arabic Kufi', sans-serif;color:#444" href=@Url.Action("Media5Ar","Home")>العربي</a>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12 mont">
+            <br />
+            <h4 style="line-height:35px;">
+
+                Public Service Company had distributed 1000 Kuwait flags in the Kuwait International Airport for the 57th celebration of the national day of Kuwait and the celebration of the 27th of the liberation of Kuwait.
+                
+                This participation of Public Service Company is the social responsibility upon the company and for His Highness Sabah Al-Ahmad the leader of humanity.
+            </h4>
+            <br />
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="gallery">
+                @* ************************************************** *@
+                <div class="thumbnail-1 wow fadeInLeft">
+                    <img src="~/Content/Images/News_Events/1000_Flags_Celebration.jpg" />
+                    @*<div class="caption">
+                            <h3 class="wow fadeInUp">Sydney</h3>
+                        </div>*@
+                </div>
+                <div class="large-1 wow bounceInLeft">
+                    <img src="~/Content/Images/News_Events/1000_Flags_Celebration.jpg" />
+                    <span class="close">&#x2715;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br /><br /><br />
+

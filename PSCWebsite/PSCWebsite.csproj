@@ -142,6 +142,7 @@
     <Content Include="Content\Images\newsbg.jpg" />
     <Content Include="Content\Images\News_Events\1.jpg" />
     <Content Include="Content\Images\News_Events\10.jpg" />
+    <Content Include="Content\Images\News_Events\1000_Flags_Celebration.jpg" />
     <Content Include="Content\Images\News_Events\10u.jpg" />
     <Content Include="Content\Images\News_Events\11.jpg" />
     <Content Include="Content\Images\News_Events\12.jpg" />
@@ -302,6 +303,8 @@
     <Content Include="Views\Home\BillingPaymentProjAr.cshtml" />
     <Content Include="Views\Home\EmpContractsRecAr.cshtml" />
     <Content Include="Views\Home\ExpressServiceCenterAr.cshtml" />
+    <Content Include="Views\Home\Media5.cshtml" />
+    <Content Include="Views\Home\Media5ar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -311,7 +314,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Models\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
