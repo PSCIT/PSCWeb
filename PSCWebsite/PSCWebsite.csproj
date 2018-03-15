@@ -237,6 +237,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\Videos\yemnak.vtt" />
+    <Content Include="fonts\ANDLSO.TTF" />
+    <Content Include="fonts\ONYX.TTF" />
     <None Include="Properties\PublishProfiles\PscWeb.pubxml" />
     <None Include="Properties\PublishProfiles\PSCWebsitePublish.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
