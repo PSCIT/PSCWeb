@@ -5,10 +5,13 @@
 @font-face {
     font-family: 'Andalus';
     src: url('../../fonts/ANDLSO.TTF') format('truetype');
+    src: url('../../fonts/ANDLSO.eot') format('embedded-opentype');
 }
+
 @font-face {
     font-family: 'ONYX';
     src: url('../../fonts/ONYX.TTF') format('truetype');
+    src: url('../../fonts/ONYX.eot') format('embedded-opentype');
 }
 body {
     overflow-x: hidden;

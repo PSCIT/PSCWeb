@@ -1,11 +1,14 @@
 ﻿@font-face {
     font-family: 'Andalus';
     src: url('../../fonts/ANDLSO.TTF') format('truetype');
+    src: url('../../fonts/ANDLSO.eot') format('embedded-opentype');
 }
 @font-face {
     font-family: 'ONYX';
     src: url('../../fonts/ONYX.TTF') format('truetype');
+    src: url('../../fonts/ONYX.eot') format('embedded-opentype');
 }
+
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 @import url('http://weloveiconfonts.com/api/?family=entypo');
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900);

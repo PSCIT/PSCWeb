@@ -169,6 +169,16 @@ namespace PSCWebsite.Controllers
             return View();
         }
 
+        public ActionResult Media6()
+        {
+            return View();
+        }
+
+        public ActionResult Media6ar()
+        {
+            return View();
+        }
+
         public ActionResult BillingPaymentProjEn()
         {
             return View();

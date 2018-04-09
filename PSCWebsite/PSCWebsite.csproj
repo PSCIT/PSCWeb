@@ -120,8 +120,10 @@
     <Content Include="Content\Images\DSC_1542.jpg" />
     <Content Include="Content\Images\DSC_1563.JPG" />
     <Content Include="Content\Images\ExpatexamProj.png" />
+    <Content Include="Content\Images\Flag_Egypt.png" />
     <Content Include="Content\Images\Flag_Egypt.svg" />
     <Content Include="Content\Images\Flag_India.svg" />
+    <Content Include="Content\Images\Flag_Jordan.png" />
     <Content Include="Content\Images\Flag_Jordan.svg" />
     <Content Include="Content\Images\Flag_of_Kuwait.svg" />
     <Content Include="Content\Images\Flag_of_the_United_Arab_Emirates.svg" />
@@ -176,6 +178,13 @@
     <Content Include="Content\Images\News_Events\8u.jpg" />
     <Content Include="Content\Images\News_Events\9.jpg" />
     <Content Include="Content\Images\News_Events\9u.jpg" />
+    <Content Include="Content\Images\News_Events\Egypt_Khadamat_Opening\0-340.jpg" />
+    <Content Include="Content\Images\News_Events\Egypt_Khadamat_Opening\0-430.jpg" />
+    <Content Include="Content\Images\News_Events\Egypt_Khadamat_Opening\0-475.jpg" />
+    <Content Include="Content\Images\News_Events\Egypt_Khadamat_Opening\0-542.jpg" />
+    <Content Include="Content\Images\News_Events\Egypt_Khadamat_Opening\0-547.jpg" />
+    <Content Include="Content\Images\News_Events\Egypt_Khadamat_Opening\0-595.jpg" />
+    <Content Include="Content\Images\News_Events\Egypt_Khadamat_Opening\Front.jpg" />
     <Content Include="Content\Images\News_Events\lunch\1.JPG" />
     <Content Include="Content\Images\News_Events\lunch\10.JPG" />
     <Content Include="Content\Images\News_Events\lunch\11.JPG" />
@@ -238,6 +247,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="fonts\ANDLSO.TTF" />
     <Content Include="fonts\ONYX.TTF" />
+    <Content Include="fonts\ONYX.eot" />
+    <Content Include="fonts\ANDLSO.eot" />
     <None Include="Properties\PublishProfiles\PscWeb.pubxml" />
     <None Include="Properties\PublishProfiles\PSCWebsitePublish.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
@@ -306,6 +317,8 @@
     <Content Include="Views\Home\ExpressServiceCenterAr.cshtml" />
     <Content Include="Views\Home\Media5.cshtml" />
     <Content Include="Views\Home\Media5ar.cshtml" />
+    <Content Include="Views\Home\Media6.cshtml" />
+    <Content Include="Views\Home\Media6ar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
