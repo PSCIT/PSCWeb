@@ -1617,6 +1617,31 @@ body {
         color: #444;
     }
 
+        header .slickclass h1 {
+        font-size: 50px;
+        padding-top: 120px;
+    }
+
+    .slick_ul {
+        margin-top: 0;
+        text-align: right !important;
+    }
+
+        .slick_ul li {
+            margin: 0 !important;
+            padding-top: 0;
+            line-height: 30px;
+            font-size: 14px;
+        }
+
+            .slick_ul li hr {
+                margin-top: 15px;
+                margin-bottom: 0;
+                border: 0;
+                border-top: 1px solid #676565;
+            }
+
+
     header .slickclass .slickdiv {
         border: 2px solid #444;
         margin-top: 30px;
