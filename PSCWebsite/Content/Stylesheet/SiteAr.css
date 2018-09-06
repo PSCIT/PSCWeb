@@ -2215,7 +2215,7 @@ p {
 [class*='thumbnail-'] {
     background: #000;
     width: 33.33%;
-    height: auto;
+    height: 200px;
     float: left;
     padding: 5px 5px 3px 5px;
     cursor: zoom-in;

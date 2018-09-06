@@ -47,7 +47,13 @@
         <label class="hidden-lg hidden-md" for="togglebox" id="navtoggler"> <i class="fa fa-bars" aria-hidden="true" for="togglebox" id="navtoggler"></i></label>
         <div class="container-fluid">
             <div class="row" style="background-color:#d1d1d1">
-                <div class="col-lg-4 col-lg-offset-5">
+                <div class="col-lg-4">
+                    <h4 style="margin-top: 15px">
+                        <i class="fa fa-phone"></i> 1824824
+                    </h4>
+                </div>
+                <div class="col-lg-4">
+                    <label class="mont">Available In : </label>
                     <a href="#"><img style="display:inline;width:8%;padding: 10px 0" src="~/Content/Images/Flag_Egypt.png" /></a>
                     <a target="_blank" href="http://www.khadamat.in/"><img style="display:inline;width:9%;padding: 10px 0" src="~/Content/Images/Flag_India.svg" /></a>
                     <img style="display:inline;width:10%;padding: 10px 0" src="~/Content/Images/Flag_Jordan.png" />
@@ -55,6 +61,7 @@
                     <img style="display:inline;width:10%;padding: 10px 0" src="~/Content/Images/Flag_of_the_United_Arab_Emirates.svg" />
                     <img style="display:inline;width:10%;padding: 10px 0" src="~/Content/Images/Flag_of_the_United_Kingdom.svg" />
                 </div>
+
             </div>
         </div>
         <header>
@@ -91,17 +98,26 @@
                                 </ul>
                             </li>
 
-                            @*<li><a class="mont" href=@Url.Action("Services", "Home")>Services</a></li>*@
+
                             <li class="dropdown mont">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href=@Url.Action("Services", "Home")>MOH - Health Insurance Project</a></li>
                                     <li><a href="@Url.Action("BillingPaymentProjEn", "Home")">MOI - Billing & Payment Project</a></li>
                                     <li><a href=@Url.Action("ExpatsExamProj", "Home")>Expatriate Manpower Screening</a></li>
                                     <li><a href=@Url.Action("EmpContractsRecEn", "Home")>Employement Contracts & Recruitment</a></li>
+                                    <li><a href="#">Renting Cars</a></li>
+                                    <li><a href="#">Printing/Photocopying for Court</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="dropdown mont">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
                                     <li><a href=@Url.Action("Xcel", "Home")>XCEL Telecommunication Center</a></li>
                                     <li><a href=@Url.Action("Yemnak","Home")>Yemnak Concierge</a></li>
-                                    <li><a href=@Url.Action("ExpressServiceCenterEn", "Home")>Express Service Center</a></li>
+                                    <li><a href="#">Khadamat Express</a></li>
                                 </ul>
                             </li>
                             <li><a class="mont" href=@Url.Action("Clients", "Home")>Our Clients</a></li>
@@ -284,7 +300,7 @@
                             Near National Bank of Kuwait
                             27377 Safat / 13104 | Contact Number : +965-1824824
                         </h5>
-                        <h5>Copyright © 2017 All rights reserved Public Service Company Kuwait</h5>
+                        <h5>Copyright © 2018 All rights reserved Public Service Company Kuwait</h5>
                     </div>
                 </div>
             </div>

@@ -57,13 +57,19 @@
 
         <div class="container-fluid">
             <div class="row" style="background-color:#d1d1d1">
-                <div class="col-lg-4 col-lg-offset-5">
+                <div class="col-lg-4 col-lg-offset-4">
                     <img style="display:inline;width:8%;padding: 10px 0" src="~/Content/Images/Flag_Egypt.png" />
                     <a target="_blank" href="http://www.khadamat.in/"><img style="display:inline;width:9%;padding: 10px 0" src="~/Content/Images/Flag_India.svg" /></a>
                     <img style="display:inline;width:10%;padding: 10px 0" src="~/Content/Images/Flag_Jordan.png" />
                     <img style="display:inline;width:10%;padding: 10px 0" src="~/Content/Images/Flag_of_Kuwait.svg" />
                     <img style="display:inline;width:10%;padding: 10px 0" src="~/Content/Images/Flag_of_the_United_Arab_Emirates.svg" />
                     <img style="display:inline;width:10%;padding: 10px 0" src="~/Content/Images/Flag_of_the_United_Kingdom.svg" />
+                    <label class="mont">: متواجدون في</label>
+                </div>
+                <div class="col-lg-4 text-right">
+                    <h4 style="margin-top: 15px">
+                        1824824 <i class="fa fa-phone" style="transform:rotate(260deg)"></i>
+                    </h4>
                 </div>
             </div>
         </div>
@@ -72,9 +78,6 @@
                 <div class="row row-menu">
                     <div class="hidden-xs hidden-sm col-md-12 col-lg-7">
                         <ul>
-
-
-
                             <li><a class="mont" href=@Url.Action("ContactusAr", "Home")>إتصل بنا</a></li>
                             @*<li><a class="mont" href=@Url.Action("MediaAllAr", "Home")>المركز الإعلامى</a></li>*@
                             <li class="dropdown mont">
@@ -88,15 +91,23 @@
                             <li><a class="mont" href=@Url.Action("ClientsAr", "Home")>عملائنا</a></li>
 
                             <li class="dropdown mont">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">مشاريعنا <span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> خدماتنا <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href=@Url.Action("XcelAr", "Home")>مركز إتصال إكسل</a></li>
+                                    <li><a href=@Url.Action("YemnakAr","Home")>يُمناك كونسيرج</a></li>
+                                    <li><a href="#">مركز خدمات اكسبرس</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown mont">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">مشاريعنا<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href=@Url.Action("ServicesAr", "Home")>مشروع الضمان الصحى</a></li>
                                     <li><a href="@Url.Action("BillingPaymentProjAr", "Home")">مشروع الفواتير و حلول السداد</a></li>
                                     <li><a href=@Url.Action("ExpatsExamProjAr", "Home")>مشروع فحص العمالة الوافدة</a></li>
                                     <li><a href=@Url.Action("EmpContractsRecAr", "Home")> عقود التوظيف واستقدام</a></li>
-                                    <li><a href=@Url.Action("XcelAr", "Home")>مركز إتصال إكسل</a></li>
-                                    <li><a href=@Url.Action("YemnakAr","Home")>يُمناك كونسيرج</a></li>
-                                    <li><a href=@Url.Action("ExpressServiceCenterAr", "Home")>مركز خدمات اكسبرس</a></li>
+                                    <li><a href="#">مشروع تاجير سيارات للمؤتمرات</a></li>
+                                    <li><a href="#">مشروع الطباعة / التصوير للمحكمة</a></li>
                                 </ul>
                             </li>
 
@@ -122,7 +133,7 @@
                         <div class="logo-container">
                             <img src="~/Content/Images/PSCLogowithouttext.svg" alt="" />
                             <h1>
-                                <a style="text-decoration:none;color:#555" href=@Url.Action("Index","Home")>
+                                <a style="text-decoration:none;color:#555" href=@Url.Action("IndexAr","Home")>
 
                                     <span style="font-family: 'Andalus'">
                                         شركة الخدمات العامة
@@ -142,9 +153,10 @@
                             <div class="slickdiv col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                                 <div class="row">
                                     <div class="col-md-7 col-lg-7">
-                                        <h1 class="mont">من نحن؟ </h1>
-                                        <h3 class="mont">
-                                            @*We together have started a journey for more than 15 years & we are heading to the top with firm progresses steps that leaves its prints wherever it goes.*@
+                                        <h2 class="mont">من نحن؟ </h2>
+                                        <h3 class="mont" style="font-size: 16px;line-height: 25px;text-align:right">
+                                            تعد شركة الخدمات العامة من الشركات الرائدة في تقديم الخدمات لعدة قطاعات في دولة الكويت  فبأمر من حضرة صاحب السمو المغفور له بإذن الله الشيخ / جابر الأحمد الجابر الصباح  أصدر مجلس الوزراء قرار رقم 5/94 بتأسيس شركة الخدمات العامة في 1996 كشركة مساهمة كويتية مقفلة حيث تم تأسيسها بالشراكة ما بين القطاع العام و الخاص و هيئات حكومية…
+                                            <a href="@Url.Action("AboutUsAr", "Home")">اقرأ أكثر</a>
                                         </h3>
                                     </div>
                                     <div class="col-md-5 col-lg-5 hidden-sm hidden-xs">
@@ -160,18 +172,41 @@
                                     <div class="col-md-7 col-lg-7">
                                         <h2 class="mont">خدماتنا </h2>
                                         <p class="mont" style="margin-bottom: 0">
-                                            @*We are working round the clock and employed with latest electronic techniques and systems to provide innovative solutions through distinguished services that cover all requirements of public and private sectors.*@
-                                            <ul class="slick_ul mont">
-                                                <li   >
-                                                    خدمات كونسيرج ( يمناك ) - هيئة الفتوى و التشريع- وزارة العدل - الامانه العامة لمجلس الوزراء -بنك وربة- البنك التجاري
+
+                                            <ul class="slick_ul mont text-center">
+                                                @*<li>
+                                                        خدمات كونسيرج ( يمناك ) - هيئة الفتوى و التشريع- وزارة العدل - الامانه العامة لمجلس الوزراء -بنك وربة- البنك التجاري
+                                                        <hr />
+                                                    </li>
+                                                    <li>
+                                                        خدمات مركز الاتصال - جامعة الكويت- شركة فيفا - وزارة الصحة
+                                                        <hr />
+                                                    </li>
+                                                    <li>
+                                                        خدمات اكسبرس
+                                                    </li>*@
+
+                                                <li>
+                                                    <h4>
+
+                                                        (خدمات كونسيرج (يمناك
+                                                    </h4>
                                                     <hr />
                                                 </li>
-                                                <li   >
-                                                    خدمات مركز الاتصال - جامعة الكويت- شركة فيفا - وزارة الصحة
+                                                <br />
+                                                <li>
+                                                    <h4>
+
+                                                        خدمات مركز الاتصال
+                                                    </h4>
                                                     <hr />
                                                 </li>
-                                                <li   >
-                                                    خدمات اكسبرس
+                                                <br />
+                                                <li>
+                                                    <h4>
+
+                                                        خدمات اكسبرس
+                                                    </h4>
                                                 </li>
                                             </ul>
                                         </p>
@@ -192,25 +227,25 @@
                                         <p class="mont" style="margin-bottom: 0">
                                             @*We are working round the clock and employed with latest electronic techniques and systems to provide innovative solutions through distinguished services that cover all requirements of public and private sectors.*@
                                             <ul class="slick_ul mont">
-                                                <li   >
+                                                <li>
                                                     مشروع فحص العمالة الوافدة - وزارة الصحة
                                                 </li>
-                                                <li   >
+                                                <li>
                                                     مشروع الضمان الصحي - وزارة الصحة
                                                 </li>
-                                                <li   >
+                                                <li>
                                                     مشروع سداد الفواتير - وزارة الداخليه
                                                 </li>
 
-                                                <li   >
+                                                <li>
                                                     مشروع توريد العمالة الفنية المتخصصة - وزارة العدل - وزارة المالية - بنك بيتك
                                                 </li>
 
-                                                <li   >
+                                                <li>
                                                     مشروع تأجير سيارات للمؤتمرات - الديوان الاميري
                                                 </li>
 
-                                                <li   >
+                                                <li>
                                                     مشروع توفير خدمات الطباعة و التصوير لجميع مباني المحاكم - وزارة العدل
                                                 </li>
                                             </ul>
@@ -290,14 +325,14 @@
                     </div>*@
 
                 @*<div class="row">
-                    <div class="col-xs-12 col-lg-4">
-                        <hr />
-                    </div>
-                    
-                    <div class="col-xs-12 col-lg-4">
-                        <hr />
-                    </div>
-                </div>*@
+                        <div class="col-xs-12 col-lg-4">
+                            <hr />
+                        </div>
+
+                        <div class="col-xs-12 col-lg-4">
+                            <hr />
+                        </div>
+                    </div>*@
 
                 <div class="row">
                     <div class="col-lg-12 mont text-center">
@@ -309,7 +344,7 @@
                             </p>
                         </h5>
                         <h5>
-                            جميع الحقوق محفوظة © 2017 | شركة الخدمات العامة ش.م.ك.م
+                            جميع الحقوق محفوظة © 2018 | شركة الخدمات العامة ش.م.ك.م
                         </h5>
                     </div>
                 </div>

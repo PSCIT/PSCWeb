@@ -1748,7 +1748,7 @@ body {
     /*#region Services */
 
     .services {
-        padding-bottom: 75px;
+        /*padding-bottom: 75px;*/
     }
 
     /*#endregion */
@@ -1951,7 +1951,7 @@ body {
     /*#region Services */
 
     .services {
-        padding-bottom: 95px;
+        /*padding-bottom: 95px;*/
     }
 
         .services .card img {
@@ -2295,7 +2295,7 @@ p {
 [class*='thumbnail-'] {
     background: #000;
     width: 33.33%;
-    height: auto;
+    height: 200px;
     float: left;
     padding: 5px 5px 3px 5px;
     cursor: zoom-in;
