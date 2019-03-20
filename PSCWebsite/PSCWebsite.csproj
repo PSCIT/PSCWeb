@@ -112,6 +112,7 @@
     <Content Include="Content\Images\AlDiwanAmiri.png" />
     <Content Include="Content\Images\alllogo.jpg" />
     <Content Include="Content\Images\altijari.png" />
+    <Content Include="Content\Images\AUB_Logo.jpg" />
     <Content Include="Content\Images\BOD_Ar.jpg" />
     <Content Include="Content\Images\BOD_En.jpg" />
     <Content Include="Content\Images\CMGS.png" />
@@ -444,6 +445,7 @@
     <Content Include="Views\Home\Media6ar.cshtml" />
     <Content Include="Views\Home\Media7.cshtml" />
     <Content Include="Views\Home\Media7ar.cshtml" />
+    <Content Include="Views\Home\PrivacyPolicy.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

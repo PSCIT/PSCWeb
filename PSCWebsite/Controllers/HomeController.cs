@@ -218,5 +218,10 @@ namespace PSCWebsite.Controllers
         {
             return View();
         }
+
+        public ActionResult PrivacyPolicy()
+        {
+            return View();
+        }
     }
 }
